@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>markdown参考案例 - Dylan</title>
+  
+  <meta name="keywords" content="markdown">
+  
+  
+  <meta name="description" content=" 字符效果和横线等
+删除线
+斜体字      斜体字
+粗体  粗体
+粗斜体 粗斜体
+高亮
+上标：X2
+下标：O2
+脚注
+Content  [1]">
+  
+
+  
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="baidu-site-verification" content="Ar3EqWfUYV" />
+  <!-- meta -->
+  
+
+  <!-- link -->
+  
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  
+  <link rel="shortcut icon" type='image/x-icon' href="https://cdn.jsdelivr.net/gh/dxsm/cdn/images/favicon.ico">
+  
+
+  
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dxsm/cdn@latest/css/style.css">
+
+    
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+     
+
+     
+
+<style>
+    #loading-container{position:fixed;top:0;left:0;min-height:100vh;width:100vw;z-index:9999;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#fff;text-align:center;-webkit-transition:opacity 1s ease;-moz-transition:opacity 1s ease;-o-transition:opacity 1s ease;transition:opacity 1s ease}.loading-image{width:120px;height:50px;transform:translate(-50%)}.loading-image div:nth-child(2){-webkit-animation:pacman-balls 1s linear 0s infinite;animation:pacman-balls 1s linear 0s infinite}.loading-image div:nth-child(3){-webkit-animation:pacman-balls 1s linear .33s infinite;animation:pacman-balls 1s linear .33s infinite}.loading-image div:nth-child(4){-webkit-animation:pacman-balls 1s linear .66s infinite;animation:pacman-balls 1s linear .66s infinite}.loading-image div:nth-child(5){-webkit-animation:pacman-balls 1s linear .99s infinite;animation:pacman-balls 1s linear .99s infinite}.loading-image div:first-of-type{width:0;height:0;border:25px solid #49b1f5;border-right-color:transparent;border-radius:25px;-webkit-animation:rotate_pacman_half_up .5s 0s infinite;animation:rotate_pacman_half_up .5s 0s infinite}.loading-image div:nth-child(2){width:0;height:0;border:25px solid #49b1f5;border-right-color:transparent;border-radius:25px;-webkit-animation:rotate_pacman_half_down .5s 0s infinite;animation:rotate_pacman_half_down .5s 0s infinite;margin-top:-50px}@-webkit-keyframes rotate_pacman_half_up{0%{transform:rotate(270deg)}50%{transform:rotate(1turn)}to{transform:rotate(270deg)}}@keyframes rotate_pacman_half_up{0%{transform:rotate(270deg)}50%{transform:rotate(1turn)}to{transform:rotate(270deg)}}@-webkit-keyframes rotate_pacman_half_down{0%{transform:rotate(90deg)}50%{transform:rotate(0)}to{transform:rotate(90deg)}}@keyframes rotate_pacman_half_down{0%{transform:rotate(90deg)}50%{transform:rotate(0)}to{transform:rotate(90deg)}}@-webkit-keyframes pacman-balls{75%{opacity:.7}to{transform:translate(-100px,-6.25px)}}@keyframes pacman-balls{75%{opacity:.7}to{transform:translate(-100px,-6.25px)}}.loading-image div:nth-child(3),.loading-image div:nth-child(4),.loading-image div:nth-child(5),.loading-image div:nth-child(6){background-color:#49b1f5;width:15px;height:15px;border-radius:100%;margin:2px;width:10px;height:10px;position:absolute;transform:translateY(-6.25px);top:25px;left:100px}.loading-text{margin-bottom:20vh;text-align:center;color:#2c3e50;font-size:2rem;box-sizing:border-box;padding:0 10px;text-shadow:0 2px 10px rgba(0,0,0,.2)}@media only screen and (max-width:500px){.loading-text{font-size:1.5rem}}.fadeout{opacity:0}@-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}@keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0)}}
+</style>
+
+<script>
+    (function () {
+        const loaded = function(){
+           setTimeout(function(){
+                const loader = document.getElementById("loading-container");
+                loader.className="fadeout" ;//使用渐隐的方法淡出loading page
+                // document.getElementById("body-wrap").style.display="flex";
+                setTimeout(function(){
+                    loader.style.display="none";
+                },1000); 
+            },1000); //强制显示loading page 1s  
+        };
+        loaded();
+    })()
+</script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div id="loading-bar-wrapper">
+  <div id="loading-bar" class="pure"></div>
+</div>
+<div id="loading-container">
+    <p class="loading-text">玩命加载中 . . .</p>
+    <div class="loading-image">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+
+    <script>setLoadingBarProgress(20)</script>
+    <header class="l_header pure">
+	<div class='wrapper'>
+	  <div class="nav-main container container--flex">
+        <a class="logo flat-box" href='/' >
+        
+          Dylan
+        
+        </a>
+		<div class='menu'>
+			<ul class='h-list'>
+            
+  			  
+                
+  				  <li>
+					<a id="home"
+								 class="nav flat-box" href="/" target="">
+						<i class='fa fa-home fa-fw'></i>&nbsp;主页
+					</a>
+				  </li>
+                
+      		  
+                
+  				  <li>
+					<a id="archives"
+								 class="nav flat-box" href="/archives/" target="">
+						<i class='fa fa-archive fa-fw'></i>&nbsp;归档
+					</a>
+				  </li>
+                
+      		  
+                
+      		  
+                
+      		  
+                
+  				  <li>
+					<a id="games"
+								 class="nav flat-box" href="/games/" target="">
+						<i class='fa fa-cubes fa-fw'></i>&nbsp;娱乐
+					</a>
+				  </li>
+                
+      		  
+                
+  				  <li>
+					<a id="tools"
+								 class="nav flat-box" href="/tools/" target="">
+						<i class='fa fa-wrench fa-fw'></i>&nbsp;工具
+					</a>
+				  </li>
+                
+      		  
+                
+  				  <li>
+					<a id="links"
+								 class="nav flat-box" href="/links/" target="">
+						<i class='fa fa-link fa-fw'></i>&nbsp;友链
+					</a>
+				  </li>
+                
+      		  
+                
+  				  <li>
+					<a id="box"
+								 class="nav flat-box" href="/box/" target="__blank">
+						<i class='fa fa-flask fa-fw'></i>&nbsp;百宝箱
+					</a>
+				  </li>
+                
+      		  
+                
+  				  <li>
+					<a id="contact"
+								 class="nav flat-box" href="/contact/" target="">
+						<i class='fa fa-comments-o fa-fw'></i>&nbsp;留言版
+					</a>
+				  </li>
+                
+      		  
+      		
+			</ul>
+		</div>
+
+		
+		<div class="m_search">
+			<form name="searchform" class="form u-search-form">
+				<input type="text" class="input u-search-input" placeholder="搜索" />
+				<span class="icon"><i class="fa fa-search fa-fw"></i></span>
+			</form>
+		</div>
+		
+		<ul class='switcher h-list'>
+			
+			<li class='s-search'><a class="fa fa-search fa-fw" href='javascript:void(0)'></a></li>
+			
+			<li class='s-menu'><a class="fa fa-bars fa-fw" href='javascript:void(0)'></a></li>
+		</ul>
+	  </div>
+
+	  <div class='nav-sub container container--flex'>
+		<a class="logo flat-box"></a>
+		  <ul class='switcher h-list'>
+			<li class='s-comment'><a class="flat-btn fa fa-comments fa-fw" href='javascript:void(0)'></a></li>
+			<li class='s-toc'><a class="flat-btn fa fa-list-ul fa-fw" href='javascript:void(0)'></a></li>
+		  </ul>
+	  </div>
+    </div>
+</header>
+
+<aside class="menu-phone">
+    
+      <section class='author' style="background-image:url(https://cdn.jsdelivr.net/gh/dxsm/cdn/images/nav-bg.jpg)">
+        <div class='avatar-wrap'>
+          <div class='avatar' style="background-image:url('https://cdn.jsdelivr.net/gh/dxsm/cdn/images/avatar.png')"></div>
+          <span class='name'>董续胜</span>
+        </div>
+        <p class='info'>
+          
+          记录时光，走向成长
+          
+        </p>
+      </section>
+    
+    <header>
+		<nav class="menu">
+          <ul>
+          
+              
+              <li>
+				<a id="home" class="nav flat-box" href="/">
+				  <i class='fa fa-home fa-fw'></i>&nbsp;主页
+				</a>
+              </li>
+              
+              <li>
+				<a id="archives" class="nav flat-box" href="/archives/">
+				  <i class='fa fa-archive fa-fw'></i>&nbsp;归档
+				</a>
+              </li>
+              
+              <li>
+				<a id="categories" class="nav flat-box" href="/categories/">
+				  <i class='fa fa-th fa-fw'></i>&nbsp;分类
+				</a>
+              </li>
+              
+              <li>
+				<a id="tags" class="nav flat-box" href="/tags/">
+				  <i class='fa fa-tags fa-fw'></i>&nbsp;标签
+				</a>
+              </li>
+              
+              <li>
+				<a id="games" class="nav flat-box" href="/games/">
+				  <i class='fa fa-cubes fa-fw'></i>&nbsp;娱乐
+				</a>
+              </li>
+              
+              <li>
+				<a id="tools" class="nav flat-box" href="/tools/">
+				  <i class='fa fa-wrench fa-fw'></i>&nbsp;工具
+				</a>
+              </li>
+              
+              <li>
+				<a id="links" class="nav flat-box" href="/links/">
+				  <i class='fa fa-link fa-fw'></i>&nbsp;友链
+				</a>
+              </li>
+              
+              <li>
+				<a id="box" class="nav flat-box" href="/box/">
+				  <i class='fa fa-flask fa-fw'></i>&nbsp;百宝箱
+				</a>
+              </li>
+              
+              <li>
+				<a id="contact" class="nav flat-box" href="/contact/">
+				  <i class='fa fa-comments-o fa-fw'></i>&nbsp;留言版
+				</a>
+              </li>
+              
+         
+         </ul>
+	   </nav>
+    </header>
+    <hr>
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="http://www.uestc.edu.cn/"  title="2016年毕业于电子科技大学" class="social flat-btn" target="_blank" rel="external nofollow"><i class="social fa fa-university fa_fw" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="http://gr.uestc.edu.cn/"  title="硕士学历" class="social flat-btn" target="_blank" rel="external nofollow"><i class="social fa fa-graduation-cap fa_fw" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="#"  title="中国 上海" class="social flat-btn" target="_blank" rel="external nofollow"><i class="social fa fa-map-marker fa_fw" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="#"  title="QQ: 959229640" class="social flat-btn" target="_blank" rel="external nofollow"><i class="social fa fa-qq fa_fw" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="mailto:959229640@qq.com"  title="959229640@qq.com" class="social flat-btn" target="_blank" rel="external nofollow"><i class="social fa fa-envelope fa_fw" aria-hidden="true"></i></a>
+          
+        
+      </div>
+    
+</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+    <div class="l_body">
+    <div class='container clearfix'>
+        <div class='l_main'>
+            <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+  
+<section class='meta'>
+  
+  
+  <div class="meta" id="header-meta">
+    
+      
+          <h1 class="title">markdown参考案例</h1>
+      
+    
+
+    <div class='new-meta-box'>
+      <!--
+      
+        <div class='new-meta-item author'>
+          <a href="https://dxsm.github.io">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            董续胜
+          </a>
+        </div>
+      
+      -->
+      
+      
+        
+          
+          <div class='new-meta-item category'>
+            <a href='/categories/markdown/'>
+              <i class="fa fa-folder-o" aria-hidden="true"></i>
+              markdown
+            </a>
+          </div>
+        
+      
+      
+        
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        <h2 id="字符效果和横线等"><a class="markdownIt-Anchor" href="#字符效果和横线等"></a> 字符效果和横线等</h2>
+<p><s>删除线</s><br />
+<em>斜体字</em>      <em>斜体字</em><br />
+<strong>粗体</strong>  <strong>粗体</strong><br />
+<em><strong>粗斜体</strong></em> <em><strong>粗斜体</strong></em><br />
+<mark>高亮</mark></p>
+<p>上标：X<sub>2</sub><br />
+下标：O<sup>2</sup></p>
+<p><strong>脚注</strong><br />
+Content  <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<a id="more"></a>
+<p><strong>缩写(同HTML的abbr标签)</strong></p>
+<p>The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
+<h2 id="引用-blockquotes"><a class="markdownIt-Anchor" href="#引用-blockquotes"></a> 引用 Blockquotes</h2>
+<p>引用的行内混合 Blockquotes</p>
+<blockquote>
+<p>引用：如果想要插入空白换行<code>即&lt;br /&gt;标签</code>，在插入处先键入两个以上的空格然后回车即可，<a href="http://localhost/" target="_blank" rel="noopener">普通链接</a>。</p>
+<ul data-mark="*">
+<li>苹果</li>
+<li>香蕉</li>
+</ul>
+</blockquote>
+<h2 id="锚点与链接-links"><a class="markdownIt-Anchor" href="#锚点与链接-links"></a> 锚点与链接 Links</h2>
+<p><a href="http://localhost/" target="_blank" rel="noopener">普通链接</a></p>
+<p><a href="http://localhost/" target="_blank" rel="noopener" title="普通链接带标题">普通链接带标题</a></p>
+<p>直接链接：<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a></p>
+<p><a href="http://www.this-anchor-link.com/" target="_blank" rel="noopener">锚点链接</a></p>
+<p><a href="mailto:test.test@gmail.com">mailto:test.test@gmail.com</a></p>
+<p>GFM a-tail link @pandao  邮箱地址自动链接 <a href="mailto:test.test@gmail.com">test.test@gmail.com</a>  <a href="mailto:www@vip.qq.com">www@vip.qq.com</a></p>
+<h2 id="多语言代码高亮-codes"><a class="markdownIt-Anchor" href="#多语言代码高亮-codes"></a> 多语言代码高亮 Codes</h2>
+<h3 id="行内代码-inline-code"><a class="markdownIt-Anchor" href="#行内代码-inline-code"></a> 行内代码 Inline code</h3>
+<p>执行命令：<code>npm install marked</code></p>
+<h3 id="缩进风格"><a class="markdownIt-Anchor" href="#缩进风格"></a> 缩进风格</h3>
+<p>即缩进四个空格，也做为实现类似 <code>&lt;pre&gt;</code> 预格式化文本 ( Preformatted Text ) 的功能。</p>
+<div class="prism-hl"><div class="code-tool"><div class="code-show" type="hide"><div class="show"><svg viewBox="0 0 1024 1024" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"><g id="小站" fill="#9daab6" stroke-width="1" fill-rule="evenodd"><path d="M1018.64495,531.297637 C1027.27952,512.687401 1023.24618,489.87879 1007.20328,475.433694 L802.095304,290.753647 L802.095304,290.753647 C782.394782,273.015217 752.044514,274.605807 734.306083,294.306329 L734.306083,294.306329 L734.306083,294.306329 C716.567653,314.006852 718.158243,344.35712 737.858766,362.09555 L904.138417,511.81442 L736.858766,662.433694 C717.158243,680.172125 715.567653,710.522392 733.306083,730.222915 C751.044514,749.923438 781.394782,751.514028 801.095304,733.775598 L1006.20328,549.09555 C1011.84552,544.015251 1016.00229,537.90046 1018.64495,531.297643 Z M119.947,511.390231 L286.22665,361.671361 C305.927173,343.932931 307.517763,313.582663 289.779333,293.88214 L289.779333,293.88214 L289.779333,293.88214 C272.040903,274.181618 241.690635,272.591027 221.990112,290.329458 L221.990112,290.329458 L16.8821402,475.009505 C0.839236202,489.454601 -3.19410198,512.263212 5.44046645,530.873448 C8.08312579,537.476271 12.2398959,543.591061 17.8821402,548.671361 L222.990112,733.351408 C242.690635,751.089839 273.040903,749.499248 290.779333,729.798726 C308.517763,710.098203 306.927173,679.747935 287.22665,662.009505 L119.947,511.390231 Z" id="Combined-Shape"></path></g></svg></div><div class="hide"><svg viewBox="0 0 1024 1024" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"><g id="小站" fill="#9daab6" stroke-width="1" fill-rule="evenodd"><path d="M1018.64495,531.297637 C1027.27952,512.687401 1023.24618,489.87879 1007.20328,475.433694 L802.095304,290.753647 C782.394782,273.015217 752.044514,274.605807 734.306083,294.306329 C716.567653,314.006852 718.158243,344.35712 737.858766,362.09555 L904.138417,511.81442 L736.858766,662.433694 C717.158243,680.172125 715.567653,710.522392 733.306083,730.222915 C751.044514,749.923438 781.394782,751.514028 801.095304,733.775598 L1006.20328,549.09555 C1011.84552,544.015251 1016.00229,537.90046 1018.64495,531.297643 Z M119.947,511.390231 L286.22665,361.671361 C305.927173,343.932931 307.517763,313.582663 289.779333,293.88214 C272.040903,274.181618 241.690635,272.591027 221.990112,290.329458 L16.8821402,475.009505 C0.839236202,489.454601 -3.19410198,512.263212 5.44046645,530.873448 C8.08312579,537.476271 12.2398959,543.591061 17.8821402,548.671361 L222.990112,733.351408 C242.690635,751.089839 273.040903,749.499248 290.779333,729.798726 C308.517763,710.098203 306.927173,679.747935 287.22665,662.009505 L119.947,511.390231 Z M649.492098,134.243566 C674.403037,143.310407 687.247217,170.85484 678.180377,195.765779 L436.030115,861.068155 C426.963275,885.979094 399.418842,898.823274 374.507902,889.756434 C349.596963,880.689593 336.752783,853.14516 345.819623,828.234221 L587.969885,162.931845 L587.969885,162.931845 C597.036725,138.020906 624.581158,125.176726 649.492098,134.243566 Z" id="Combined-Shape"></path></g></svg></div></div><div class="copy" aria-label=""><svg preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></g></svg></div></div><pre>&lt;?php
+    echo &quot;Hello world!&quot;;
+?&gt;
+</pre></div>
+<p>预格式化文本：</p>
+<div class="prism-hl"><div class="code-tool"><div class="code-show" type="hide"><div class="show"><svg viewBox="0 0 1024 1024" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"><g id="小站" fill="#9daab6" stroke-width="1" fill-rule="evenodd"><path d="M1018.64495,531.297637 C1027.27952,512.687401 1023.24618,489.87879 1007.20328,475.433694 L802.095304,290.753647 L802.095304,290.753647 C782.394782,273.015217 752.044514,274.605807 734.306083,294.306329 L734.306083,294.306329 L734.306083,294.306329 C716.567653,314.006852 718.158243,344.35712 737.858766,362.09555 L904.138417,511.81442 L736.858766,662.433694 C717.158243,680.172125 715.567653,710.522392 733.306083,730.222915 C751.044514,749.923438 781.394782,751.514028 801.095304,733.775598 L1006.20328,549.09555 C1011.84552,544.015251 1016.00229,537.90046 1018.64495,531.297643 Z M119.947,511.390231 L286.22665,361.671361 C305.927173,343.932931 307.517763,313.582663 289.779333,293.88214 L289.779333,293.88214 L289.779333,293.88214 C272.040903,274.181618 241.690635,272.591027 221.990112,290.329458 L221.990112,290.329458 L16.8821402,475.009505 C0.839236202,489.454601 -3.19410198,512.263212 5.44046645,530.873448 C8.08312579,537.476271 12.2398959,543.591061 17.8821402,548.671361 L222.990112,733.351408 C242.690635,751.089839 273.040903,749.499248 290.779333,729.798726 C308.517763,710.098203 306.927173,679.747935 287.22665,662.009505 L119.947,511.390231 Z" id="Combined-Shape"></path></g></svg></div><div class="hide"><svg viewBox="0 0 1024 1024" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"><g id="小站" fill="#9daab6" stroke-width="1" fill-rule="evenodd"><path d="M1018.64495,531.297637 C1027.27952,512.687401 1023.24618,489.87879 1007.20328,475.433694 L802.095304,290.753647 C782.394782,273.015217 752.044514,274.605807 734.306083,294.306329 C716.567653,314.006852 718.158243,344.35712 737.858766,362.09555 L904.138417,511.81442 L736.858766,662.433694 C717.158243,680.172125 715.567653,710.522392 733.306083,730.222915 C751.044514,749.923438 781.394782,751.514028 801.095304,733.775598 L1006.20328,549.09555 C1011.84552,544.015251 1016.00229,537.90046 1018.64495,531.297643 Z M119.947,511.390231 L286.22665,361.671361 C305.927173,343.932931 307.517763,313.582663 289.779333,293.88214 C272.040903,274.181618 241.690635,272.591027 221.990112,290.329458 L16.8821402,475.009505 C0.839236202,489.454601 -3.19410198,512.263212 5.44046645,530.873448 C8.08312579,537.476271 12.2398959,543.591061 17.8821402,548.671361 L222.990112,733.351408 C242.690635,751.089839 273.040903,749.499248 290.779333,729.798726 C308.517763,710.098203 306.927173,679.747935 287.22665,662.009505 L119.947,511.390231 Z M649.492098,134.243566 C674.403037,143.310407 687.247217,170.85484 678.180377,195.765779 L436.030115,861.068155 C426.963275,885.979094 399.418842,898.823274 374.507902,889.756434 C349.596963,880.689593 336.752783,853.14516 345.819623,828.234221 L587.969885,162.931845 L587.969885,162.931845 C597.036725,138.020906 624.581158,125.176726 649.492098,134.243566 Z" id="Combined-Shape"></path></g></svg></div></div><div class="copy" aria-label=""><svg preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></g></svg></div></div><pre>| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+</pre></div>
+<h3 id="js代码"><a class="markdownIt-Anchor" href="#js代码"></a> JS代码</h3>
+<div class="prism-hl"><div class="code-tool"><div class="code-show" type="hide"><div class="show"><svg viewBox="0 0 1024 1024" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"><g id="小站" fill="#9daab6" stroke-width="1" fill-rule="evenodd"><path d="M1018.64495,531.297637 C1027.27952,512.687401 1023.24618,489.87879 1007.20328,475.433694 L802.095304,290.753647 L802.095304,290.753647 C782.394782,273.015217 752.044514,274.605807 734.306083,294.306329 L734.306083,294.306329 L734.306083,294.306329 C716.567653,314.006852 718.158243,344.35712 737.858766,362.09555 L904.138417,511.81442 L736.858766,662.433694 C717.158243,680.172125 715.567653,710.522392 733.306083,730.222915 C751.044514,749.923438 781.394782,751.514028 801.095304,733.775598 L1006.20328,549.09555 C1011.84552,544.015251 1016.00229,537.90046 1018.64495,531.297643 Z M119.947,511.390231 L286.22665,361.671361 C305.927173,343.932931 307.517763,313.582663 289.779333,293.88214 L289.779333,293.88214 L289.779333,293.88214 C272.040903,274.181618 241.690635,272.591027 221.990112,290.329458 L221.990112,290.329458 L16.8821402,475.009505 C0.839236202,489.454601 -3.19410198,512.263212 5.44046645,530.873448 C8.08312579,537.476271 12.2398959,543.591061 17.8821402,548.671361 L222.990112,733.351408 C242.690635,751.089839 273.040903,749.499248 290.779333,729.798726 C308.517763,710.098203 306.927173,679.747935 287.22665,662.009505 L119.947,511.390231 Z" id="Combined-Shape"></path></g></svg></div><div class="hide"><svg viewBox="0 0 1024 1024" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"><g id="小站" fill="#9daab6" stroke-width="1" fill-rule="evenodd"><path d="M1018.64495,531.297637 C1027.27952,512.687401 1023.24618,489.87879 1007.20328,475.433694 L802.095304,290.753647 C782.394782,273.015217 752.044514,274.605807 734.306083,294.306329 C716.567653,314.006852 718.158243,344.35712 737.858766,362.09555 L904.138417,511.81442 L736.858766,662.433694 C717.158243,680.172125 715.567653,710.522392 733.306083,730.222915 C751.044514,749.923438 781.394782,751.514028 801.095304,733.775598 L1006.20328,549.09555 C1011.84552,544.015251 1016.00229,537.90046 1018.64495,531.297643 Z M119.947,511.390231 L286.22665,361.671361 C305.927173,343.932931 307.517763,313.582663 289.779333,293.88214 C272.040903,274.181618 241.690635,272.591027 221.990112,290.329458 L16.8821402,475.009505 C0.839236202,489.454601 -3.19410198,512.263212 5.44046645,530.873448 C8.08312579,537.476271 12.2398959,543.591061 17.8821402,548.671361 L222.990112,733.351408 C242.690635,751.089839 273.040903,749.499248 290.779333,729.798726 C308.517763,710.098203 306.927173,679.747935 287.22665,662.009505 L119.947,511.390231 Z M649.492098,134.243566 C674.403037,143.310407 687.247217,170.85484 678.180377,195.765779 L436.030115,861.068155 C426.963275,885.979094 399.418842,898.823274 374.507902,889.756434 C349.596963,880.689593 336.752783,853.14516 345.819623,828.234221 L587.969885,162.931845 L587.969885,162.931845 C597.036725,138.020906 624.581158,125.176726 649.492098,134.243566 Z" id="Combined-Shape"></path></g></svg></div></div><div class="copy" aria-label=""><svg preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></g></svg></div></div><pre data_role="codeBlock" class="language-javascript line-numbers" ><span class="token keyword">function</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello world!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> <span class="token function-variable function">box</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> box<span class="token punctuation">.</span>fn<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    box<span class="token punctuation">.</span>prototype <span class="token operator">=</span> box<span class="token punctuation">.</span>fn <span class="token operator">=</span> <span class="token punctuation">{</span>
+        init <span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'box.init()'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+			<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+		add <span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"add"</span><span class="token punctuation">,</span> str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+			<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+		remove <span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"remove"</span><span class="token punctuation">,</span> str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+			<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    box<span class="token punctuation">.</span>fn<span class="token punctuation">.</span>init<span class="token punctuation">.</span>prototype <span class="token operator">=</span> box<span class="token punctuation">.</span>fn<span class="token punctuation">;</span>
+
+    window<span class="token punctuation">.</span>box <span class="token operator">=</span>box<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> testBox <span class="token operator">=</span> <span class="token function">box</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+testBox<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"jQuery"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token string">"jQuery"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<h2 id="图片-images"><a class="markdownIt-Anchor" href="#图片-images"></a> 图片 Images</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/dxsm/cdn/images/loading.svg" alt="" data-echo="https://cdn.jsdelivr.net/gh/dxsm/cdn/images/avatar1.jpeg" /></p>
+<h2 id="列表-lists"><a class="markdownIt-Anchor" href="#列表-lists"></a> 列表 Lists</h2>
+<h3 id="无序列表加号和嵌套unordered-lists-"><a class="markdownIt-Anchor" href="#无序列表加号和嵌套unordered-lists-"></a> 无序列表（加号和嵌套）Unordered Lists (+/-/*)</h3>
+<ul data-mark="+">
+<li>列表1</li>
+<li>列表2
+<ul data-mark="+">
+<li>列表二-1</li>
+<li>列表二-2</li>
+<li>列表二-3
+<ul data-mark="+">
+<li>level 3</li>
+<li>list</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>列表3
+<ul data-mark="-">
+<li>列表一</li>
+<li>列表二</li>
+</ul>
+</li>
+</ul>
+<h3 id="有序列表-ordered-lists-12"><a class="markdownIt-Anchor" href="#有序列表-ordered-lists-12"></a> 有序列表 Ordered Lists (1./2.)</h3>
+<ol>
+<li>第一行</li>
+<li>第二行</li>
+<li>第三行</li>
+</ol>
+<h3 id="gfm-task-list"><a class="markdownIt-Anchor" href="#gfm-task-list"></a> GFM task list</h3>
+<ul data-mark="-" class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> GFM task list 1</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> GFM task list 2</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> GFM task list 3
+<ul data-mark="-" class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> GFM task list 3-1</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> GFM task list 3-2</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> GFM task list 3-3</li>
+</ul>
+</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> GFM task list 4
+<ul data-mark="-" class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> GFM task list 4-1</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> GFM task list 4-2</li>
+</ul>
+</li>
+</ul>
+<h2 id="绘制表格-tables"><a class="markdownIt-Anchor" href="#绘制表格-tables"></a> 绘制表格 Tables</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Left-Aligned</th>
+<th style="text-align:center">Center Aligned</th>
+<th style="text-align:right">Right Aligned</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">col 3 is</td>
+<td style="text-align:center">some wordy text</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td style="text-align:left">col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td style="text-align:left">zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="特殊符号-html-entities-codes"><a class="markdownIt-Anchor" href="#特殊符号-html-entities-codes"></a> 特殊符号 <abbr title="Hyper Text Markup Language">HTML</abbr> Entities Codes</h2>
+<p>© &amp;  ¨ ™ ¡ £<br />
+&amp; &lt; &gt; ¥ € ® ± ¶ § ¦ ¯ « ·</p>
+<p>X² Y³ ¾ ¼  ×  ÷   »</p>
+<p>18ºC  &quot;  '</p>
+<h2 id="emoji表情"><a class="markdownIt-Anchor" href="#emoji表情"></a> Emoji表情 😃</h2>
+<ul data-mark="-" class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> 😃 😂  @mentions, ⭐️ #refs, <a href="">links</a>, <strong>formatting</strong>, and <del>tags</del> supported 💘;</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> list syntax required (any unordered or ordered list supported) ⏰;</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> ♥️ 💛 💝 this is a complete item 👍 👎;</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> this is an incomplete item <a href="#">test link</a> 💊 💉 @pandao 📜 📁 📂;</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> ⚙️ this is an incomplete item 🔍 🔒 ✉️ 📌 📎 📝 📆 📅 ;
+<ul data-mark="-" class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> ⚡️ this is an incomplete item <a href="#">test link</a> 🎉 🔔 ⏳;</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 🐰 ❓ ❗️ 🔖 📚 🔥  this is  🎶 ☀️ 🍄 an incomplete item <a href="#">test link</a>;</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 🍵 🍎 🏠 🇨🇳 ▶️ ☑️ 🔗 :fa-gear: :fa-gear: ⚡️</li>
+</ul>
+</li>
+</ul>
+<h2 id="科学公式-texkatex"><a class="markdownIt-Anchor" href="#科学公式-texkatex"></a> 科学公式 TeX(KaTeX)</h2>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">E=mc^2
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8641079999999999em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>行内的公式<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">E=mc^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>行内的公式，行内的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">E=mc^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>公式。</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi><mo>&gt;</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x &gt; y
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span></span></p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo stretchy="false">(</mo><msqrt><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mn>1</mn></mrow></msqrt><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>x</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\sqrt{3x-1}+(1+x)^2)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.16443em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9144300000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">3</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span></span></span><span style="top:-2.8744300000000003em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,
+-10,-9.5,-14c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54c44.2,-33.3,65.8,
+-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10s173,378,173,378c0.7,0,
+35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429c69,-144,104.5,-217.7,106.5,
+-221c5.3,-9.3,12,-14,20,-14H400000v40H845.2724s-225.272,467,-225.272,467
+s-235,486,-235,486c-2.7,4.7,-9,7,-19,7c-6,0,-10,-1,-12,-3s-194,-422,-194,-422
+s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.12556999999999996em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.1141079999999999em;vertical-align:-0.25em;"></span><span class="mord mathdefault">x</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>α</mi><msup><mo stretchy="false">)</mo><mi>θ</mi></msup><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mo stretchy="false">(</mo><msup><mi>x</mi><mi>i</mi></msup><mo>+</mo><mi>cos</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.149108em;vertical-align:-0.25em;"></span><span class="mop">sin</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">θ</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.929066em;vertical-align:-1.277669em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8746639999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">cos</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mclose">)</span><span class="mclose">)</span></span></span></span></span></p>
+<h3 id="拓展功能自定义div"><a class="markdownIt-Anchor" href="#拓展功能自定义div"></a> 拓展功能–自定义div</h3>
+<h3 id="detail折叠"><a class="markdownIt-Anchor" href="#detail折叠"></a> detail折叠</h3>
+<details><summary>Python code</summary>
+<div class="prism-hl"><div class="code-tool"><div class="code-show" type="hide"><div class="show"><svg viewBox="0 0 1024 1024" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"><g id="小站" fill="#9daab6" stroke-width="1" fill-rule="evenodd"><path d="M1018.64495,531.297637 C1027.27952,512.687401 1023.24618,489.87879 1007.20328,475.433694 L802.095304,290.753647 L802.095304,290.753647 C782.394782,273.015217 752.044514,274.605807 734.306083,294.306329 L734.306083,294.306329 L734.306083,294.306329 C716.567653,314.006852 718.158243,344.35712 737.858766,362.09555 L904.138417,511.81442 L736.858766,662.433694 C717.158243,680.172125 715.567653,710.522392 733.306083,730.222915 C751.044514,749.923438 781.394782,751.514028 801.095304,733.775598 L1006.20328,549.09555 C1011.84552,544.015251 1016.00229,537.90046 1018.64495,531.297643 Z M119.947,511.390231 L286.22665,361.671361 C305.927173,343.932931 307.517763,313.582663 289.779333,293.88214 L289.779333,293.88214 L289.779333,293.88214 C272.040903,274.181618 241.690635,272.591027 221.990112,290.329458 L221.990112,290.329458 L16.8821402,475.009505 C0.839236202,489.454601 -3.19410198,512.263212 5.44046645,530.873448 C8.08312579,537.476271 12.2398959,543.591061 17.8821402,548.671361 L222.990112,733.351408 C242.690635,751.089839 273.040903,749.499248 290.779333,729.798726 C308.517763,710.098203 306.927173,679.747935 287.22665,662.009505 L119.947,511.390231 Z" id="Combined-Shape"></path></g></svg></div><div class="hide"><svg viewBox="0 0 1024 1024" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"><g id="小站" fill="#9daab6" stroke-width="1" fill-rule="evenodd"><path d="M1018.64495,531.297637 C1027.27952,512.687401 1023.24618,489.87879 1007.20328,475.433694 L802.095304,290.753647 C782.394782,273.015217 752.044514,274.605807 734.306083,294.306329 C716.567653,314.006852 718.158243,344.35712 737.858766,362.09555 L904.138417,511.81442 L736.858766,662.433694 C717.158243,680.172125 715.567653,710.522392 733.306083,730.222915 C751.044514,749.923438 781.394782,751.514028 801.095304,733.775598 L1006.20328,549.09555 C1011.84552,544.015251 1016.00229,537.90046 1018.64495,531.297643 Z M119.947,511.390231 L286.22665,361.671361 C305.927173,343.932931 307.517763,313.582663 289.779333,293.88214 C272.040903,274.181618 241.690635,272.591027 221.990112,290.329458 L16.8821402,475.009505 C0.839236202,489.454601 -3.19410198,512.263212 5.44046645,530.873448 C8.08312579,537.476271 12.2398959,543.591061 17.8821402,548.671361 L222.990112,733.351408 C242.690635,751.089839 273.040903,749.499248 290.779333,729.798726 C308.517763,710.098203 306.927173,679.747935 287.22665,662.009505 L119.947,511.390231 Z M649.492098,134.243566 C674.403037,143.310407 687.247217,170.85484 678.180377,195.765779 L436.030115,861.068155 C426.963275,885.979094 399.418842,898.823274 374.507902,889.756434 C349.596963,880.689593 336.752783,853.14516 345.819623,828.234221 L587.969885,162.931845 L587.969885,162.931845 C597.036725,138.020906 624.581158,125.176726 649.492098,134.243566 Z" id="Combined-Shape"></path></g></svg></div></div><div class="copy" aria-label=""><svg preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></g></svg></div></div><pre data_role="codeBlock" class="language-python line-numbers" ><span class="token keyword">import</span> os
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"hello world"</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></pre></div>
+</details>
+<h3 id="hint块"><a class="markdownIt-Anchor" href="#hint块"></a> hint块</h3>
+<div class="hint info"><span class="hint-icon"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="none" class="icon-7f6730be--text-3f89f380"><g><path d="M12.2 8.98c.06-.01.12-.03.18-.06.06-.02.12-.05.18-.09l.15-.12c.18-.19.29-.45.29-.71 0-.06-.01-.13-.02-.19a.603.603 0 0 0-.06-.19.757.757 0 0 0-.09-.18c-.03-.05-.08-.1-.12-.15-.28-.27-.72-.37-1.09-.21-.13.05-.23.12-.33.21-.04.05-.09.1-.12.15-.04.06-.07.12-.09.18-.03.06-.05.12-.06.19-.01.06-.02.13-.02.19 0 .26.11.52.29.71.1.09.2.16.33.21.12.05.25.08.38.08.06 0 .13-.01.2-.02M13 16v-4a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0M12 3c-4.962 0-9 4.038-9 9 0 4.963 4.038 9 9 9 4.963 0 9-4.037 9-9 0-4.962-4.037-9-9-9m0 20C5.935 23 1 18.065 1 12S5.935 1 12 1c6.066 0 11 4.935 11 11s-4.934 11-11 11" fill-rule="evenodd"></path></g></svg></span><span class="hint-content"><p>hello world</p>
+</span></div>
+<div class="hint success"><span class="hint-icon"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380" style="color: rgb(38, 203, 124);"><g><path d="M22 11.07V12a10 10 0 1 1-5.93-9.14"></path><polyline points="23 3 12 14 9 11"></polyline></g></svg></span><span class="hint-content"><p>hello world</p>
+</span></div>
+<div class="hint warning"><span class="hint-icon"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380" style="color: rgb(247, 125, 5);"><g><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line></g></svg></span><span class="hint-content"><p>hello world</p>
+</span></div>
+<div class="hint danger"><span class="hint-icon"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380" style="color: rgb(255, 70, 66);"><g><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12" y2="17"></line></g></svg></span><span class="hint-content"><p>hello world</p>
+</span></div>
+<h3 id="pannel块"><a class="markdownIt-Anchor" href="#pannel块"></a> pannel块</h3>
+<div class="pannel default"><div class="pannel-head">任务列表</div><div class="pannel-body"><ul data-mark="-" class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> 买一双运动鞋</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 背诵一篇作文</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 打一会篮球</li>
+</ul>
+</div></div>
+<div class="pannel success"><div class="pannel-head">任务列表</div><div class="pannel-body"><ul data-mark="-" class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> 买一双运动鞋</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 背诵一篇作文</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 打一会篮球</li>
+</ul>
+</div></div>
+<div class="pannel info"><div class="pannel-head">任务列表</div><div class="pannel-body"><ul data-mark="-" class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> 买一双运动鞋</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 背诵一篇作文</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 打一会篮球</li>
+</ul>
+</div></div>
+<div class="pannel warning"><div class="pannel-head">任务列表</div><div class="pannel-body"><ul data-mark="-" class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> 买一双运动鞋</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 背诵一篇作文</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 打一会篮球</li>
+</ul>
+</div></div>
+<div class="pannel danger"><div class="pannel-head">任务列表</div><div class="pannel-body"><ul data-mark="-" class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> 买一双运动鞋</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 背诵一篇作文</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 打一会篮球</li>
+</ul>
+</div></div>
+<h2 id="绘制流程图"><a class="markdownIt-Anchor" href="#绘制流程图"></a> 绘制流程图</h2>
+<h3 id="flowchart"><a class="markdownIt-Anchor" href="#flowchart"></a> Flowchart</h3>
+<p>流程图语法参考 <a href="https://github.com/adrai/flowchart.js" target="_blank" rel="noopener">https://github.com/adrai/flowchart.js</a></p>
+<div class="flow">st=&gt;start: Start:&gt;https://dxsm.github.io[blank]
+e=&gt;end:&gt;https://dxsm.github.io
+op1=&gt;operation: My Operation
+sub1=&gt;subroutine: My Subroutine
+cond=&gt;condition: Yes
+or No?:&gt;https://dxsm.github.io
+io=&gt;inputoutput: catch something...
+para=&gt;parallel: parallel tasks
+
+st-&gt;op1-&gt;cond
+cond(yes)-&gt;io-&gt;e
+cond(no)-&gt;para
+para(path1, bottom)-&gt;sub1(right)-&gt;op1
+para(path2, top)-&gt;op1
+</div>
+<h3 id="sequence-diagram"><a class="markdownIt-Anchor" href="#sequence-diagram"></a> Sequence Diagram</h3>
+<p>语法参考 <a href="https://bramp.github.io/js-sequence-diagrams/" target="_blank" rel="noopener">https://bramp.github.io/js-sequence-diagrams/</a></p>
+<div class="sequence">Andrew-&gt;China: Says Hello
+Note right of China: China thinks\nabout it
+China--&gt;Andrew: How are you?
+Andrew-&gt;&gt;China: I am good thanks!
+</div>
+<h3 id="mermaid"><a class="markdownIt-Anchor" href="#mermaid"></a> mermaid</h3>
+<p>mermaid非常强大，基本能够替代上面两种流程图，语法参考 <a href="https://mermaid-js.github.io/mermaid/#/flowchart" target="_blank" rel="noopener">https://mermaid-js.github.io/mermaid/#/flowchart</a></p>
+<h4 id="sequence-diagram-2"><a class="markdownIt-Anchor" href="#sequence-diagram-2"></a> sequence diagram</h4>
+<div class="mermaid">sequenceDiagram
+Alice -&gt;&gt; Bob: Hello Bob, how are you?
+Bob--&gt;&gt;John: How about you John?
+Bob--x Alice: I am good thanks!
+Bob-x John: I am good thanks!
+Note right of John: Bob thinks a long&lt;br/&gt;long time, so long&lt;br/&gt;that the text does&lt;br/&gt;not fit on a row.
+
+Bob--&gt;Alice: Checking with John...
+Alice-&gt;John: Yes... John, how are you?
+</div>
+<h4 id="flowchart-2"><a class="markdownIt-Anchor" href="#flowchart-2"></a> flowchart</h4>
+<div class="mermaid">graph LR
+A[Square Rect] -- Link text --&gt; B((Circle))
+A --&gt; C(Round Rect)
+B --&gt; D{Rhombus}
+C --&gt; D
+</div>
+<h4 id="state-diagram"><a class="markdownIt-Anchor" href="#state-diagram"></a> state diagram</h4>
+<div class="mermaid">stateDiagram
+	[*] --&gt; Still
+	Still --&gt; [*]
+
+	Still --&gt; Moving
+	Moving --&gt; Still
+	Moving --&gt; Crash
+	Crash --&gt; [*]
+</div>
+<h4 id="pie-chart"><a class="markdownIt-Anchor" href="#pie-chart"></a> pie chart</h4>
+<div class="mermaid">pie title Pets adopted by volunteers
+	&quot;Dogs&quot; : 386
+	&quot;Cats&quot; : 85
+	&quot;Rats&quot; : 15
+</div>
+<h4 id="gantt"><a class="markdownIt-Anchor" href="#gantt"></a> gantt</h4>
+<div class="mermaid">gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2              :         des4, after des3, 5d
+</div>
+<h3 id="电路时序图"><a class="markdownIt-Anchor" href="#电路时序图"></a> 电路时序图</h3>
+<div class="wavedrom"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="150" width="480" viewBox="0 0 480 150" overflow="hidden"><g><g transform="translate(60.5, 0.5)"><g><g style="stroke:#888;stroke-width:0.5;stroke-dasharray:1,3"><line x1="0" y1="0" x2="0" y2="150"/><line x1="40" y1="0" x2="40" y2="150"/><line x1="80" y1="0" x2="80" y2="150"/><line x1="120" y1="0" x2="120" y2="150"/><line x1="160" y1="0" x2="160" y2="150"/><line x1="200" y1="0" x2="200" y2="150"/><line x1="240" y1="0" x2="240" y2="150"/><line x1="280" y1="0" x2="280" y2="150"/><line x1="320" y1="0" x2="320" y2="150"/><line x1="360" y1="0" x2="360" y2="150"/><line x1="400" y1="0" x2="400" y2="150"/></g></g><g transform="translate(0,5)"><text x="-10" y="15" class="info" text-anchor="end" xml:space="preserve"><tspan>clk</tspan></text><g transform="translate(0, 0)"><use xlink:href="#Pclk" transform="translate(0)"/><use xlink:href="#nclk" transform="translate(20)"/><use xlink:href="#Pclk" transform="translate(40)"/><use xlink:href="#nclk" transform="translate(60)"/><use xlink:href="#Pclk" transform="translate(80)"/><use xlink:href="#nclk" transform="translate(100)"/><use xlink:href="#Pclk" transform="translate(120)"/><use xlink:href="#nclk" transform="translate(140)"/><use xlink:href="#Pclk" transform="translate(160)"/><use xlink:href="#nclk" transform="translate(180)"/><use xlink:href="#Pclk" transform="translate(200)"/><use xlink:href="#nclk" transform="translate(220)"/><use xlink:href="#Pclk" transform="translate(240)"/><use xlink:href="#nclk" transform="translate(260)"/><use xlink:href="#Pclk" transform="translate(280)"/><use xlink:href="#nclk" transform="translate(300)"/><use xlink:href="#Pclk" transform="translate(320)"/><use xlink:href="#nclk" transform="translate(340)"/><use xlink:href="#Pclk" transform="translate(360)"/><use xlink:href="#nclk" transform="translate(380)"/></g></g><g transform="translate(0,35)"><text x="-10" y="15" class="info" text-anchor="end" xml:space="preserve"><tspan>dat</tspan></text><g transform="translate(0, 0)"><use xlink:href="#xxx" transform="translate(0)"/><use xlink:href="#xxx" transform="translate(20)"/><use xlink:href="#xxx" transform="translate(40)"/><use xlink:href="#xxx" transform="translate(60)"/><use xlink:href="#xmv-3" transform="translate(80)"/><use xlink:href="#vvv-3" transform="translate(100)"/><use xlink:href="#vmv-3-4" transform="translate(120)"/><use xlink:href="#vvv-4" transform="translate(140)"/><use xlink:href="#vmv-4-5" transform="translate(160)"/><use xlink:href="#vvv-5" transform="translate(180)"/><use xlink:href="#vmx-5" transform="translate(200)"/><use xlink:href="#xxx" transform="translate(220)"/><use xlink:href="#xxx" transform="translate(240)"/><use xlink:href="#xxx" transform="translate(260)"/><use xlink:href="#xmv-2" transform="translate(280)"/><use xlink:href="#vvv-2" transform="translate(300)"/><use xlink:href="#vvv-2" transform="translate(320)"/><use xlink:href="#vvv-2" transform="translate(340)"/><use xlink:href="#vmx-2" transform="translate(360)"/><use xlink:href="#xxx" transform="translate(380)"/><text x="106" y="15" text-anchor="middle" xml:space="preserve"><tspan>head</tspan></text><text x="146" y="15" text-anchor="middle" xml:space="preserve"><tspan>body</tspan></text><text x="186" y="15" text-anchor="middle" xml:space="preserve"><tspan>tail</tspan></text><text x="326" y="15" text-anchor="middle" xml:space="preserve"><tspan>data</tspan></text></g></g><g transform="translate(0,65)"><text x="-10" y="15" class="info" text-anchor="end" xml:space="preserve"><tspan>req</tspan></text><g transform="translate(0, 0)"><use xlink:href="#000" transform="translate(0)"/><use xlink:href="#000" transform="translate(20)"/><use xlink:href="#000" transform="translate(40)"/><use xlink:href="#000" transform="translate(60)"/><use xlink:href="#0m1" transform="translate(80)"/><use xlink:href="#111" transform="translate(100)"/><use xlink:href="#111" transform="translate(120)"/><use xlink:href="#111" transform="translate(140)"/><use xlink:href="#111" transform="translate(160)"/><use xlink:href="#111" transform="translate(180)"/><use xlink:href="#1m0" transform="translate(200)"/><use xlink:href="#000" transform="translate(220)"/><use xlink:href="#000" transform="translate(240)"/><use xlink:href="#000" transform="translate(260)"/><use xlink:href="#0m1" transform="translate(280)"/><use xlink:href="#111" transform="translate(300)"/><use xlink:href="#111" transform="translate(320)"/><use xlink:href="#111" transform="translate(340)"/><use xlink:href="#1m0" transform="translate(360)"/><use xlink:href="#000" transform="translate(380)"/></g></g><g transform="translate(0,95)"><text x="-10" y="15" class="info" text-anchor="end" xml:space="preserve"><tspan></tspan></text><g transform="translate(0, 0)"/></g><g transform="translate(0,125)"><text x="-10" y="15" class="info" text-anchor="end" xml:space="preserve"><tspan>ack</tspan></text><g transform="translate(0, 0)"><use xlink:href="#111" transform="translate(0)"/><use xlink:href="#111" transform="translate(20)"/><use xlink:href="#111" transform="translate(40)"/><use xlink:href="#111" transform="translate(60)"/><use xlink:href="#111" transform="translate(80)"/><use xlink:href="#111" transform="translate(100)"/><use xlink:href="#111" transform="translate(120)"/><use xlink:href="#111" transform="translate(140)"/><use xlink:href="#111" transform="translate(160)"/><use xlink:href="#111" transform="translate(180)"/><use xlink:href="#111" transform="translate(200)"/><use xlink:href="#111" transform="translate(220)"/><use xlink:href="#111" transform="translate(240)"/><use xlink:href="#111" transform="translate(260)"/><use xlink:href="#1m0" transform="translate(280)"/><use xlink:href="#000" transform="translate(300)"/><use xlink:href="#0m1" transform="translate(320)"/><use xlink:href="#111" transform="translate(340)"/><use xlink:href="#111" transform="translate(360)"/><use xlink:href="#111" transform="translate(380)"/></g></g><g/><g><g transform="translate(0,5)"><use xlink:href="#gap" transform="translate(260)"/></g><g transform="translate(0,35)"><use xlink:href="#gap" transform="translate(260)"/></g><g transform="translate(0,65)"><use xlink:href="#gap" transform="translate(260)"/></g><g transform="translate(0,95)"/><g transform="translate(0,125)"><use xlink:href="#gap" transform="translate(260)"/></g></g></g><g><g/></g></g></svg></div>
+<h3 id="思维导图"><a class="markdownIt-Anchor" href="#思维导图"></a> 思维导图</h3>
+<!--htmlmin:ignore--><p class="kminder_text" style="display:none">height: 200px
+#主题
+##论点1
+###概述1
+###概述2
+##论点2
+##论点3
+##论点4
+</p><!--htmlmin:ignore--><div class="kminder"></div>
+<hr class="footnotes-sep" />
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>我是脚注 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+        
+          <blockquote class="post-copyright">
+  <p class="post-copyright-author">
+    <strong>本文作者：</strong>
+    董续胜
+  </p>
+  <p class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://dxsm.github.io/p/markdown-ref-nc.html" title="markdown参考案例">https://dxsm.github.io/p/markdown-ref-nc.html</a>
+  </p>
+  <p class="post-copyright-license">
+    <strong>版权声明：</strong>
+    本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a>许可协议。转载请注明出处！
+  </p>
+</blockquote>
+
+        
+      </div>
+        
+          <section class='meta' id="footer-meta">
+            <hr>
+            <div class='new-meta-box'>
+              
+                <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-11T03:26:21+08:00">
+                  <a class='notlink'>
+                    <i class="fa fa-pencil-alt" aria-hidden="true"></i>
+                    2020-04-11
+                  </a>
+                </div>
+              
+              
+                
+                <div class="new-meta-item meta-tags"><a class="tag" href="/tags/markdown/"><i class="fa fa-hashtag" aria-hidden="true"></i>&nbsp;markdown</a></div>
+              
+              
+            </div>
+          </section>
+        
+
+        
+
+        
+
+        
+            <div class="prev-next">
+                
+                    <section class="prev">
+                        <span class="art-item-left">
+                            <h6><i class="fa fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
+                            <h4>
+                                <a href="/p/education-book.html" rel="prev" title="孩子教养推荐书籍">
+                                  
+                                      孩子教养推荐书籍
+                                  
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/tags/%E5%84%BF%E7%AB%A5%E6%95%99%E8%82%B2/"><i class="fa fa-hashtag fa-fw" aria-hidden="true"></i>儿童教育</a> <a class="tag" href="/tags/%E4%B9%A6%E7%B1%8D/"><i class="fa fa-hashtag fa-fw" aria-hidden="true"></i>书籍</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+                
+            </div>
+        
+
+    </section>
+
+</article>
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+<!-- add by victor -->
+
+  <link href="https://cdn.bootcss.com/KaTeX/0.9.0/katex.min.css" rel="stylesheet">
+
+
+
+  <!-- wavedrom -->
+   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none"><defs><g id="socket"><rect y="15" x="6" height="20" width="20"></rect></g><g id="pclk"><path d="M0,20 0,0 20,0" class="s1"></path></g><g id="nclk"><path d="m0,0 0,20 20,0" class="s1"></path></g><g id="000"><path d="m0,20 20,0" class="s1"></path></g><g id="0m0"><path d="m0,20 3,0 3,-10 3,10 11,0" class="s1"></path></g><g id="0m1"><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="0mx"><path d="M3,20 9,0 20,0" class="s1"></path><path d="m20,15 -5,5" class="s2"></path><path d="M20,10 10,20" class="s2"></path><path d="M20,5 5,20" class="s2"></path><path d="M20,0 4,16" class="s2"></path><path d="M15,0 6,9" class="s2"></path><path d="M10,0 9,1" class="s2"></path><path d="m0,20 20,0" class="s1"></path></g><g id="0md"><path d="m8,20 10,0" class="s3"></path><path d="m0,20 5,0" class="s1"></path></g><g id="0mu"><path d="m0,20 3,0 C 7,10 10.107603,0 20,0" class="s1"></path></g><g id="0mz"><path d="m0,20 3,0 C 10,10 15,10 20,10" class="s1"></path></g><g id="111"><path d="M0,0 20,0" class="s1"></path></g><g id="1m0"><path d="m0,0 3,0 6,20 11,0" class="s1"></path></g><g id="1m1"><path d="M0,0 3,0 6,10 9,0 20,0" class="s1"></path></g><g id="1mx"><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path><path d="m20,15 -5,5" class="s2"></path><path d="M20,10 10,20" class="s2"></path><path d="M20,5 8,17" class="s2"></path><path d="M20,0 7,13" class="s2"></path><path d="M15,0 6,9" class="s2"></path><path d="M10,0 5,5" class="s2"></path><path d="M3.5,1.5 5,0" class="s2"></path></g><g id="1md"><path d="m0,0 3,0 c 4,10 7,20 17,20" class="s1"></path></g><g id="1mu"><path d="M0,0 5,0" class="s1"></path><path d="M8,0 18,0" class="s3"></path></g><g id="1mz"><path d="m0,0 3,0 c 7,10 12,10 17,10" class="s1"></path></g><g id="xxx"><path d="m0,20 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path><path d="M0,5 5,0" class="s2"></path><path d="M0,10 10,0" class="s2"></path><path d="M0,15 15,0" class="s2"></path><path d="M0,20 20,0" class="s2"></path><path d="M5,20 20,5" class="s2"></path><path d="M10,20 20,10" class="s2"></path><path d="m15,20 5,-5" class="s2"></path></g><g id="xm0"><path d="M0,0 4,0 9,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path><path d="M0,5 4,1" class="s2"></path><path d="M0,10 5,5" class="s2"></path><path d="M0,15 6,9" class="s2"></path><path d="M0,20 7,13" class="s2"></path><path d="M5,20 8,17" class="s2"></path></g><g id="xm1"><path d="M0,0 20,0" class="s1"></path><path d="M0,20 4,20 9,0" class="s1"></path><path d="M0,5 5,0" class="s2"></path><path d="M0,10 9,1" class="s2"></path><path d="M0,15 7,8" class="s2"></path><path d="M0,20 5,15" class="s2"></path></g><g id="xmx"><path d="m0,20 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path><path d="M0,5 5,0" class="s2"></path><path d="M0,10 10,0" class="s2"></path><path d="M0,15 15,0" class="s2"></path><path d="M0,20 20,0" class="s2"></path><path d="M5,20 20,5" class="s2"></path><path d="M10,20 20,10" class="s2"></path><path d="m15,20 5,-5" class="s2"></path></g><g id="xmd"><path d="m0,0 4,0 c 3,10 6,20 16,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path><path d="M0,5 4,1" class="s2"></path><path d="M0,10 5.5,4.5" class="s2"></path><path d="M0,15 6.5,8.5" class="s2"></path><path d="M0,20 8,12" class="s2"></path><path d="m5,20 5,-5" class="s2"></path><path d="m10,20 2.5,-2.5" class="s2"></path></g><g id="xmu"><path d="M0,0 20,0" class="s1"></path><path d="m0,20 4,0 C 7,10 10,0 20,0" class="s1"></path><path d="M0,5 5,0" class="s2"></path><path d="M0,10 10,0" class="s2"></path><path d="M0,15 10,5" class="s2"></path><path d="M0,20 6,14" class="s2"></path></g><g id="xmz"><path d="m0,0 4,0 c 6,10 11,10 16,10" class="s1"></path><path d="m0,20 4,0 C 10,10 15,10 20,10" class="s1"></path><path d="M0,5 4.5,0.5" class="s2"></path><path d="M0,10 6.5,3.5" class="s2"></path><path d="M0,15 8.5,6.5" class="s2"></path><path d="M0,20 11.5,8.5" class="s2"></path></g><g id="ddd"><path d="m0,20 20,0" class="s3"></path></g><g id="dm0"><path d="m0,20 10,0" class="s3"></path><path d="m12,20 8,0" class="s1"></path></g><g id="dm1"><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="dmx"><path d="M3,20 9,0 20,0" class="s1"></path><path d="m20,15 -5,5" class="s2"></path><path d="M20,10 10,20" class="s2"></path><path d="M20,5 5,20" class="s2"></path><path d="M20,0 4,16" class="s2"></path><path d="M15,0 6,9" class="s2"></path><path d="M10,0 9,1" class="s2"></path><path d="m0,20 20,0" class="s1"></path></g><g id="dmd"><path d="m0,20 20,0" class="s3"></path></g><g id="dmu"><path d="m0,20 3,0 C 7,10 10.107603,0 20,0" class="s1"></path></g><g id="dmz"><path d="m0,20 3,0 C 10,10 15,10 20,10" class="s1"></path></g><g id="uuu"><path d="M0,0 20,0" class="s3"></path></g><g id="um0"><path d="m0,0 3,0 6,20 11,0" class="s1"></path></g><g id="um1"><path d="M0,0 10,0" class="s3"></path><path d="m12,0 8,0" class="s1"></path></g><g id="umx"><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path><path d="m20,15 -5,5" class="s2"></path><path d="M20,10 10,20" class="s2"></path><path d="M20,5 8,17" class="s2"></path><path d="M20,0 7,13" class="s2"></path><path d="M15,0 6,9" class="s2"></path><path d="M10,0 5,5" class="s2"></path><path d="M3.5,1.5 5,0" class="s2"></path></g><g id="umd"><path d="m0,0 3,0 c 4,10 7,20 17,20" class="s1"></path></g><g id="umu"><path d="M0,0 20,0" class="s3"></path></g><g id="umz"><path d="m0,0 3,0 c 7,10 12,10 17,10" class="s4"></path></g><g id="zzz"><path d="m0,10 20,0" class="s1"></path></g><g id="zm0"><path d="m0,10 6,0 3,10 11,0" class="s1"></path></g><g id="zm1"><path d="M0,10 6,10 9,0 20,0" class="s1"></path></g><g id="zmx"><path d="m6,10 3,10 11,0" class="s1"></path><path d="M0,10 6,10 9,0 20,0" class="s1"></path><path d="m20,15 -5,5" class="s2"></path><path d="M20,10 10,20" class="s2"></path><path d="M20,5 8,17" class="s2"></path><path d="M20,0 7,13" class="s2"></path><path d="M15,0 6.5,8.5" class="s2"></path><path d="M10,0 9,1" class="s2"></path></g><g id="zmd"><path d="m0,10 7,0 c 3,5 8,10 13,10" class="s1"></path></g><g id="zmu"><path d="m0,10 7,0 C 10,5 15,0 20,0" class="s1"></path></g><g id="zmz"><path d="m0,10 20,0" class="s1"></path></g><g id="gap"><path d="m7,-2 -4,0 c -5,0 -5,24 -10,24 l 4,0 C 2,22 2,-2 7,-2 z" class="s5"></path><path d="M-7,22 C -2,22 -2,-2 3,-2" class="s1"></path><path d="M-3,22 C 2,22 2,-2 7,-2" class="s1"></path></g><g id="Pclk"><path d="M-3,12 0,3 3,12 C 1,11 -1,11 -3,12 z" class="s6"></path><path d="M0,20 0,0 20,0" class="s1"></path></g><g id="Nclk"><path d="M-3,8 0,17 3,8 C 1,9 -1,9 -3,8 z" class="s6"></path><path d="m0,0 0,20 20,0" class="s1"></path></g><g id="0mv-2"><path d="M9,0 20,0 20,20 3,20 z" class="s7"></path><path d="M3,20 9,0 20,0" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="1mv-2"><path d="M2.875,0 20,0 20,20 9,20 z" class="s7"></path><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="xmv-2"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s7"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,5 3.5,1.5" class="s2"></path><path d="M0,10 4.5,5.5" class="s2"></path><path d="M0,15 6,9" class="s2"></path><path d="M0,20 4,16" class="s2"></path></g><g id="dmv-2"><path d="M9,0 20,0 20,20 3,20 z" class="s7"></path><path d="M3,20 9,0 20,0" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="umv-2"><path d="M3,0 20,0 20,20 9,20 z" class="s7"></path><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="zmv-2"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s7"></path><path d="m6,10 3,10 11,0" class="s1"></path><path d="M0,10 6,10 9,0 20,0" class="s1"></path></g><g id="vvv-2"><path d="M20,20 0,20 0,0 20,0" class="s7"></path><path d="m0,20 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="vm0-2"><path d="M0,20 0,0 3,0 9,20" class="s7"></path><path d="M0,0 3,0 9,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="vm1-2"><path d="M0,0 0,20 3,20 9,0" class="s7"></path><path d="M0,0 20,0" class="s1"></path><path d="M0,20 3,20 9,0" class="s1"></path></g><g id="vmx-2"><path d="M0,0 0,20 3,20 6,10 3,0" class="s7"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path><path d="m20,15 -5,5" class="s2"></path><path d="M20,10 10,20" class="s2"></path><path d="M20,5 8,17" class="s2"></path><path d="M20,0 7,13" class="s2"></path><path d="M15,0 7,8" class="s2"></path><path d="M10,0 9,1" class="s2"></path></g><g id="vmd-2"><path d="m0,0 0,20 20,0 C 10,20 7,10 3,0" class="s7"></path><path d="m0,0 3,0 c 4,10 7,20 17,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="vmu-2"><path d="m0,0 0,20 3,0 C 7,10 10,0 20,0" class="s7"></path><path d="m0,20 3,0 C 7,10 10,0 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="vmz-2"><path d="M0,0 3,0 C 10,10 15,10 20,10 15,10 10,10 3,20 L 0,20" class="s7"></path><path d="m0,0 3,0 c 7,10 12,10 17,10" class="s1"></path><path d="m0,20 3,0 C 10,10 15,10 20,10" class="s1"></path></g><g id="0mv-3"><path d="M9,0 20,0 20,20 3,20 z" class="s8"></path><path d="M3,20 9,0 20,0" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="1mv-3"><path d="M2.875,0 20,0 20,20 9,20 z" class="s8"></path><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="xmv-3"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s8"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,5 3.5,1.5" class="s2"></path><path d="M0,10 4.5,5.5" class="s2"></path><path d="M0,15 6,9" class="s2"></path><path d="M0,20 4,16" class="s2"></path></g><g id="dmv-3"><path d="M9,0 20,0 20,20 3,20 z" class="s8"></path><path d="M3,20 9,0 20,0" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="umv-3"><path d="M3,0 20,0 20,20 9,20 z" class="s8"></path><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="zmv-3"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s8"></path><path d="m6,10 3,10 11,0" class="s1"></path><path d="M0,10 6,10 9,0 20,0" class="s1"></path></g><g id="vvv-3"><path d="M20,20 0,20 0,0 20,0" class="s8"></path><path d="m0,20 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="vm0-3"><path d="M0,20 0,0 3,0 9,20" class="s8"></path><path d="M0,0 3,0 9,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="vm1-3"><path d="M0,0 0,20 3,20 9,0" class="s8"></path><path d="M0,0 20,0" class="s1"></path><path d="M0,20 3,20 9,0" class="s1"></path></g><g id="vmx-3"><path d="M0,0 0,20 3,20 6,10 3,0" class="s8"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path><path d="m20,15 -5,5" class="s2"></path><path d="M20,10 10,20" class="s2"></path><path d="M20,5 8,17" class="s2"></path><path d="M20,0 7,13" class="s2"></path><path d="M15,0 7,8" class="s2"></path><path d="M10,0 9,1" class="s2"></path></g><g id="vmd-3"><path d="m0,0 0,20 20,0 C 10,20 7,10 3,0" class="s8"></path><path d="m0,0 3,0 c 4,10 7,20 17,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="vmu-3"><path d="m0,0 0,20 3,0 C 7,10 10,0 20,0" class="s8"></path><path d="m0,20 3,0 C 7,10 10,0 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="vmz-3"><path d="M0,0 3,0 C 10,10 15,10 20,10 15,10 10,10 3,20 L 0,20" class="s8"></path><path d="m0,0 3,0 c 7,10 12,10 17,10" class="s1"></path><path d="m0,20 3,0 C 10,10 15,10 20,10" class="s1"></path></g><g id="0mv-4"><path d="M9,0 20,0 20,20 3,20 z" class="s9"></path><path d="M3,20 9,0 20,0" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="1mv-4"><path d="M2.875,0 20,0 20,20 9,20 z" class="s9"></path><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="xmv-4"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s9"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,5 3.5,1.5" class="s2"></path><path d="M0,10 4.5,5.5" class="s2"></path><path d="M0,15 6,9" class="s2"></path><path d="M0,20 4,16" class="s2"></path></g><g id="dmv-4"><path d="M9,0 20,0 20,20 3,20 z" class="s9"></path><path d="M3,20 9,0 20,0" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="umv-4"><path d="M3,0 20,0 20,20 9,20 z" class="s9"></path><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="zmv-4"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s9"></path><path d="m6,10 3,10 11,0" class="s1"></path><path d="M0,10 6,10 9,0 20,0" class="s1"></path></g><g id="vvv-4"><path d="M20,20 0,20 0,0 20,0" class="s9"></path><path d="m0,20 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="vm0-4"><path d="M0,20 0,0 3,0 9,20" class="s9"></path><path d="M0,0 3,0 9,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="vm1-4"><path d="M0,0 0,20 3,20 9,0" class="s9"></path><path d="M0,0 20,0" class="s1"></path><path d="M0,20 3,20 9,0" class="s1"></path></g><g id="vmx-4"><path d="M0,0 0,20 3,20 6,10 3,0" class="s9"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path><path d="m20,15 -5,5" class="s2"></path><path d="M20,10 10,20" class="s2"></path><path d="M20,5 8,17" class="s2"></path><path d="M20,0 7,13" class="s2"></path><path d="M15,0 7,8" class="s2"></path><path d="M10,0 9,1" class="s2"></path></g><g id="vmd-4"><path d="m0,0 0,20 20,0 C 10,20 7,10 3,0" class="s9"></path><path d="m0,0 3,0 c 4,10 7,20 17,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="vmu-4"><path d="m0,0 0,20 3,0 C 7,10 10,0 20,0" class="s9"></path><path d="m0,20 3,0 C 7,10 10,0 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="vmz-4"><path d="M0,0 3,0 C 10,10 15,10 20,10 15,10 10,10 3,20 L 0,20" class="s9"></path><path d="m0,0 3,0 c 7,10 12,10 17,10" class="s1"></path><path d="m0,20 3,0 C 10,10 15,10 20,10" class="s1"></path></g><g id="0mv-5"><path d="M9,0 20,0 20,20 3,20 z" class="s10"></path><path d="M3,20 9,0 20,0" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="1mv-5"><path d="M2.875,0 20,0 20,20 9,20 z" class="s10"></path><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="xmv-5"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s10"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,5 3.5,1.5" class="s2"></path><path d="M0,10 4.5,5.5" class="s2"></path><path d="M0,15 6,9" class="s2"></path><path d="M0,20 4,16" class="s2"></path></g><g id="dmv-5"><path d="M9,0 20,0 20,20 3,20 z" class="s10"></path><path d="M3,20 9,0 20,0" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="umv-5"><path d="M3,0 20,0 20,20 9,20 z" class="s10"></path><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="zmv-5"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s10"></path><path d="m6,10 3,10 11,0" class="s1"></path><path d="M0,10 6,10 9,0 20,0" class="s1"></path></g><g id="vvv-5"><path d="M20,20 0,20 0,0 20,0" class="s10"></path><path d="m0,20 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="vm0-5"><path d="M0,20 0,0 3,0 9,20" class="s10"></path><path d="M0,0 3,0 9,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="vm1-5"><path d="M0,0 0,20 3,20 9,0" class="s10"></path><path d="M0,0 20,0" class="s1"></path><path d="M0,20 3,20 9,0" class="s1"></path></g><g id="vmx-5"><path d="M0,0 0,20 3,20 6,10 3,0" class="s10"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path><path d="m20,15 -5,5" class="s2"></path><path d="M20,10 10,20" class="s2"></path><path d="M20,5 8,17" class="s2"></path><path d="M20,0 7,13" class="s2"></path><path d="M15,0 7,8" class="s2"></path><path d="M10,0 9,1" class="s2"></path></g><g id="vmd-5"><path d="m0,0 0,20 20,0 C 10,20 7,10 3,0" class="s10"></path><path d="m0,0 3,0 c 4,10 7,20 17,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="vmu-5"><path d="m0,0 0,20 3,0 C 7,10 10,0 20,0" class="s10"></path><path d="m0,20 3,0 C 7,10 10,0 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="vmz-5"><path d="M0,0 3,0 C 10,10 15,10 20,10 15,10 10,10 3,20 L 0,20" class="s10"></path><path d="m0,0 3,0 c 7,10 12,10 17,10" class="s1"></path><path d="m0,20 3,0 C 10,10 15,10 20,10" class="s1"></path></g><g id="0mv-6"><path d="M9,0 20,0 20,20 3,20 z" class="s11"></path><path d="M3,20 9,0 20,0" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="1mv-6"><path d="M2.875,0 20,0 20,20 9,20 z" class="s11"></path><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="xmv-6"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s11"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,5 3.5,1.5" class="s2"></path><path d="M0,10 4.5,5.5" class="s2"></path><path d="M0,15 6,9" class="s2"></path><path d="M0,20 4,16" class="s2"></path></g><g id="dmv-6"><path d="M9,0 20,0 20,20 3,20 z" class="s11"></path><path d="M3,20 9,0 20,0" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="umv-6"><path d="M3,0 20,0 20,20 9,20 z" class="s11"></path><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="zmv-6"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s11"></path><path d="m6,10 3,10 11,0" class="s1"></path><path d="M0,10 6,10 9,0 20,0" class="s1"></path></g><g id="vvv-6"><path d="M20,20 0,20 0,0 20,0" class="s11"></path><path d="m0,20 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="vm0-6"><path d="M0,20 0,0 3,0 9,20" class="s11"></path><path d="M0,0 3,0 9,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="vm1-6"><path d="M0,0 0,20 3,20 9,0" class="s11"></path><path d="M0,0 20,0" class="s1"></path><path d="M0,20 3,20 9,0" class="s1"></path></g><g id="vmx-6"><path d="M0,0 0,20 3,20 6,10 3,0" class="s11"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path><path d="m20,15 -5,5" class="s2"></path><path d="M20,10 10,20" class="s2"></path><path d="M20,5 8,17" class="s2"></path><path d="M20,0 7,13" class="s2"></path><path d="M15,0 7,8" class="s2"></path><path d="M10,0 9,1" class="s2"></path></g><g id="vmd-6"><path d="m0,0 0,20 20,0 C 10,20 7,10 3,0" class="s11"></path><path d="m0,0 3,0 c 4,10 7,20 17,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="vmu-6"><path d="m0,0 0,20 3,0 C 7,10 10,0 20,0" class="s11"></path><path d="m0,20 3,0 C 7,10 10,0 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="vmz-6"><path d="M0,0 3,0 C 10,10 15,10 20,10 15,10 10,10 3,20 L 0,20" class="s11"></path><path d="m0,0 3,0 c 7,10 12,10 17,10" class="s1"></path><path d="m0,20 3,0 C 10,10 15,10 20,10" class="s1"></path></g><g id="0mv-7"><path d="M9,0 20,0 20,20 3,20 z" class="s12"></path><path d="M3,20 9,0 20,0" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="1mv-7"><path d="M2.875,0 20,0 20,20 9,20 z" class="s12"></path><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="xmv-7"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s12"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,5 3.5,1.5" class="s2"></path><path d="M0,10 4.5,5.5" class="s2"></path><path d="M0,15 6,9" class="s2"></path><path d="M0,20 4,16" class="s2"></path></g><g id="dmv-7"><path d="M9,0 20,0 20,20 3,20 z" class="s12"></path><path d="M3,20 9,0 20,0" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="umv-7"><path d="M3,0 20,0 20,20 9,20 z" class="s12"></path><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="zmv-7"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s12"></path><path d="m6,10 3,10 11,0" class="s1"></path><path d="M0,10 6,10 9,0 20,0" class="s1"></path></g><g id="vvv-7"><path d="M20,20 0,20 0,0 20,0" class="s12"></path><path d="m0,20 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="vm0-7"><path d="M0,20 0,0 3,0 9,20" class="s12"></path><path d="M0,0 3,0 9,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="vm1-7"><path d="M0,0 0,20 3,20 9,0" class="s12"></path><path d="M0,0 20,0" class="s1"></path><path d="M0,20 3,20 9,0" class="s1"></path></g><g id="vmx-7"><path d="M0,0 0,20 3,20 6,10 3,0" class="s12"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path><path d="m20,15 -5,5" class="s2"></path><path d="M20,10 10,20" class="s2"></path><path d="M20,5 8,17" class="s2"></path><path d="M20,0 7,13" class="s2"></path><path d="M15,0 7,8" class="s2"></path><path d="M10,0 9,1" class="s2"></path></g><g id="vmd-7"><path d="m0,0 0,20 20,0 C 10,20 7,10 3,0" class="s12"></path><path d="m0,0 3,0 c 4,10 7,20 17,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="vmu-7"><path d="m0,0 0,20 3,0 C 7,10 10,0 20,0" class="s12"></path><path d="m0,20 3,0 C 7,10 10,0 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="vmz-7"><path d="M0,0 3,0 C 10,10 15,10 20,10 15,10 10,10 3,20 L 0,20" class="s12"></path><path d="m0,0 3,0 c 7,10 12,10 17,10" class="s1"></path><path d="m0,20 3,0 C 10,10 15,10 20,10" class="s1"></path></g><g id="0mv-8"><path d="M9,0 20,0 20,20 3,20 z" class="s13"></path><path d="M3,20 9,0 20,0" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="1mv-8"><path d="M2.875,0 20,0 20,20 9,20 z" class="s13"></path><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="xmv-8"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s13"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,5 3.5,1.5" class="s2"></path><path d="M0,10 4.5,5.5" class="s2"></path><path d="M0,15 6,9" class="s2"></path><path d="M0,20 4,16" class="s2"></path></g><g id="dmv-8"><path d="M9,0 20,0 20,20 3,20 z" class="s13"></path><path d="M3,20 9,0 20,0" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="umv-8"><path d="M3,0 20,0 20,20 9,20 z" class="s13"></path><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="zmv-8"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s13"></path><path d="m6,10 3,10 11,0" class="s1"></path><path d="M0,10 6,10 9,0 20,0" class="s1"></path></g><g id="vvv-8"><path d="M20,20 0,20 0,0 20,0" class="s13"></path><path d="m0,20 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="vm0-8"><path d="M0,20 0,0 3,0 9,20" class="s13"></path><path d="M0,0 3,0 9,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="vm1-8"><path d="M0,0 0,20 3,20 9,0" class="s13"></path><path d="M0,0 20,0" class="s1"></path><path d="M0,20 3,20 9,0" class="s1"></path></g><g id="vmx-8"><path d="M0,0 0,20 3,20 6,10 3,0" class="s13"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path><path d="m20,15 -5,5" class="s2"></path><path d="M20,10 10,20" class="s2"></path><path d="M20,5 8,17" class="s2"></path><path d="M20,0 7,13" class="s2"></path><path d="M15,0 7,8" class="s2"></path><path d="M10,0 9,1" class="s2"></path></g><g id="vmd-8"><path d="m0,0 0,20 20,0 C 10,20 7,10 3,0" class="s13"></path><path d="m0,0 3,0 c 4,10 7,20 17,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="vmu-8"><path d="m0,0 0,20 3,0 C 7,10 10,0 20,0" class="s13"></path><path d="m0,20 3,0 C 7,10 10,0 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="vmz-8"><path d="M0,0 3,0 C 10,10 15,10 20,10 15,10 10,10 3,20 L 0,20" class="s13"></path><path d="m0,0 3,0 c 7,10 12,10 17,10" class="s1"></path><path d="m0,20 3,0 C 10,10 15,10 20,10" class="s1"></path></g><g id="0mv-9"><path d="M9,0 20,0 20,20 3,20 z" class="s14"></path><path d="M3,20 9,0 20,0" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="1mv-9"><path d="M2.875,0 20,0 20,20 9,20 z" class="s14"></path><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="xmv-9"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s14"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,5 3.5,1.5" class="s2"></path><path d="M0,10 4.5,5.5" class="s2"></path><path d="M0,15 6,9" class="s2"></path><path d="M0,20 4,16" class="s2"></path></g><g id="dmv-9"><path d="M9,0 20,0 20,20 3,20 z" class="s14"></path><path d="M3,20 9,0 20,0" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="umv-9"><path d="M3,0 20,0 20,20 9,20 z" class="s14"></path><path d="m3,0 6,20 11,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="zmv-9"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s14"></path><path d="m6,10 3,10 11,0" class="s1"></path><path d="M0,10 6,10 9,0 20,0" class="s1"></path></g><g id="vvv-9"><path d="M20,20 0,20 0,0 20,0" class="s14"></path><path d="m0,20 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="vm0-9"><path d="M0,20 0,0 3,0 9,20" class="s14"></path><path d="M0,0 3,0 9,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="vm1-9"><path d="M0,0 0,20 3,20 9,0" class="s14"></path><path d="M0,0 20,0" class="s1"></path><path d="M0,20 3,20 9,0" class="s1"></path></g><g id="vmx-9"><path d="M0,0 0,20 3,20 6,10 3,0" class="s14"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path><path d="m20,15 -5,5" class="s2"></path><path d="M20,10 10,20" class="s2"></path><path d="M20,5 8,17" class="s2"></path><path d="M20,0 7,13" class="s2"></path><path d="M15,0 7,8" class="s2"></path><path d="M10,0 9,1" class="s2"></path></g><g id="vmd-9"><path d="m0,0 0,20 20,0 C 10,20 7,10 3,0" class="s14"></path><path d="m0,0 3,0 c 4,10 7,20 17,20" class="s1"></path><path d="m0,20 20,0" class="s1"></path></g><g id="vmu-9"><path d="m0,0 0,20 3,0 C 7,10 10,0 20,0" class="s14"></path><path d="m0,20 3,0 C 7,10 10,0 20,0" class="s1"></path><path d="M0,0 20,0" class="s1"></path></g><g id="vmz-9"><path d="M0,0 3,0 C 10,10 15,10 20,10 15,10 10,10 3,20 L 0,20" class="s14"></path><path d="m0,0 3,0 c 7,10 12,10 17,10" class="s1"></path><path d="m0,20 3,0 C 10,10 15,10 20,10" class="s1"></path></g><g id="vmv-2-2"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s7"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s7"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-3-2"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s7"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s8"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-4-2"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s7"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s9"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-5-2"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s7"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s10"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-6-2"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s7"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s11"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-7-2"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s7"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s12"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-8-2"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s7"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s13"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-9-2"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s7"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s14"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-2-3"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s8"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s7"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-3-3"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s8"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s8"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-4-3"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s8"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s9"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-5-3"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s8"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s10"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-6-3"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s8"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s11"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-7-3"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s8"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s12"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-8-3"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s8"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s13"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-9-3"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s8"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s14"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-2-4"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s9"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s7"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-3-4"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s9"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s8"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-4-4"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s9"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s9"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-5-4"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s9"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s10"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-6-4"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s9"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s11"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-7-4"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s9"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s12"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-8-4"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s9"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s13"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-9-4"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s9"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s14"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-2-5"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s10"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s7"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-3-5"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s10"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s8"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-4-5"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s10"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s9"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-5-5"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s10"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s10"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-6-5"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s10"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s11"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-7-5"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s10"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s12"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-8-5"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s10"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s13"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-9-5"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s10"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s14"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-2-6"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s11"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s7"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-3-6"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s11"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s8"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-4-6"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s11"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s9"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-5-6"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s11"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s10"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-6-6"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s11"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s11"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-7-6"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s11"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s12"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-8-6"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s11"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s13"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-9-6"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s11"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s14"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-2-7"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s12"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s7"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-3-7"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s12"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s8"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-4-7"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s12"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s9"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-5-7"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s12"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s10"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-6-7"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s12"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s11"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-7-7"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s12"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s12"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-8-7"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s12"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s13"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-9-7"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s12"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s14"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-2-8"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s13"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s7"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-3-8"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s13"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s8"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-4-8"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s13"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s9"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-5-8"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s13"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s10"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-6-8"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s13"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s11"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-7-8"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s13"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s12"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-8-8"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s13"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s13"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-9-8"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s13"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s14"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-2-9"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s14"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s7"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-3-9"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s14"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s8"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-4-9"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s14"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s9"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-5-9"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s14"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s10"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-6-9"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s14"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s11"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-7-9"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s14"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s12"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-8-9"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s14"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s13"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="vmv-9-9"><path d="M9,0 20,0 20,20 9,20 6,10 z" class="s14"></path><path d="M3,0 0,0 0,20 3,20 6,10 z" class="s14"></path><path d="m0,0 3,0 6,20 11,0" class="s1"></path><path d="M0,20 3,20 9,0 20,0" class="s1"></path></g><g id="arrow0"><path d="m-12,-3 9,3 -9,3 c 1,-2 1,-4 0,-6 z" class="s15"></path><path d="M0,0 -15,0" class="s16"></path></g><marker id="arrowhead" style="fill:#0041c4" markerHeight="7" markerWidth="10" markerUnits="strokeWidth" viewBox="0 -4 11 8" refX="15" refY="0" orient="auto"><path d="M0 -4 11 0 0 4z"></path></marker><marker id="arrowtail" style="fill:#0041c4" markerHeight="7" markerWidth="10" markerUnits="strokeWidth" viewBox="-11 -4 11 8" refX="-15" refY="0" orient="auto"><path d="M0 -4 -11 0 0 4z"></path></marker></defs></svg>   
+
+
+
+  <!-- flow -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.13.0/flowchart.min.js"></script>
+  <script>
+    var flowcharts = document.getElementsByClassName('flow');
+    for (var i = 0; i < flowcharts.length; i++) {
+      var flow = flowcharts[i];
+      try {
+        var diagram = flowchart.parse(flow.textContent);
+        flow.id = 'flow_' + i;
+        flow.innerHTML = '';
+        diagram.drawSVG(flow.id);
+      } catch (error) {
+        flow.innerHTML = '<pre class="language-text">' + error.toString() + '</pre>';
+      }
+    }
+  </script>
+
+
+
+  <!-- sequence -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script>
+  <script>
+    var sequenceDiagrams = document.getElementsByClassName('sequence');
+    for (var i = 0; i < sequenceDiagrams.length; i++) {
+      var sequence = sequenceDiagrams[i];
+      try {
+        var diagram = Diagram.parse(sequence.textContent);
+        var theme = sequence.getAttribute('theme') || 'simple';
+        sequence.id = 'sequence_' + i;
+        sequence.innerHTML = '';
+        diagram.drawSVG(sequence.id, {theme: theme});
+      } catch (error) {
+        sequence.innerHTML = '<pre class="language-text">' + error.toString() + '</pre>';
+      }
+    }
+  </script>
+
+
+
+  <!-- mermaid -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.init(null, document.getElementsByClassName('mermaid'));
+  </script>
+
+
+
+  <!-- kminder -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dxsm/cdn/lib/kminder/kityminder.core.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/dxsm/cdn/lib/kminder/kity.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/dxsm/cdn/lib/kminder/kityminder.core.min.js"></script>
+  <script>
+    var kminder = document.getElementsByClassName("kminder");
+    var kminder_text = document.getElementsByClassName("kminder_text");
+    for(i=0;i<kminder_text.length;i++){
+        var markdownText = kminder_text[i].innerHTML.trim();
+        var minder,match;
+        if(match = /^height:\s*(\d+px)\n/.exec(markdownText)) {
+            minder = new kityminder.Minder({renderTo: kminder[i], enableAnimation: 0, height: match[1]});
+        } else {
+            minder = new kityminder.Minder({renderTo: kminder[i], enableAnimation: 0});
+        }
+        minder.importData('markdown', markdownText);
+        minder.disable();
+        minder.execCommand('hand');
+    }
+  </script>
+
+
+<br>
+
+<!-- 显示推荐文章和评论 -->
+
+
+
+  <article class="post white-box comments">
+    <section class="article typo">
+      <h4><i class="fa fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+      
+      
+      
+        <section id="comments">
+          <div id="valine_container" class="valine_thread">
+            <i class="fa fa-spinner fa-spin fa-fw"></i>
+          </div>
+        </section>
+      
+    </section>
+  </article>
+
+
+
+<script>
+    window.subData = {
+        title: 'markdown参考案例',
+        tools: true
+    }
+</script>
+
+
+        </div>
+        <aside class='l_side'>
+            
+  
+  
+    
+      
+      
+        <section class='author'>
+  <div class='content pure'>
+    
+      <div class='avatar'>
+        <img class='avatar' src='https://cdn.jsdelivr.net/gh/dxsm/cdn/images/loading.svg' data-echo='https://cdn.jsdelivr.net/gh/dxsm/cdn/images/avatar3.jpg'/>
+      </div>
+    
+    
+      <div class='text'>
+        
+        
+          <p class="nickname">星雨夜澈</p>
+        
+        
+          <p><span class="descr">不忘初心，记录时光，走向成长</span></p>
+          
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="http://www.uestc.edu.cn/" title="2016年毕业于电子科技大学" class="social flat-btn" target="_blank" rel="external nofollow"><i class="social fa fa-university fa_fw" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="http://gr.uestc.edu.cn/" title="硕士学历" class="social flat-btn" target="_blank" rel="external nofollow"><i class="social fa fa-graduation-cap fa_fw" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="#" title="中国 上海" class="social flat-btn" target="_blank" rel="external nofollow"><i class="social fa fa-map-marker fa_fw" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="#" title="QQ: 959229640" class="social flat-btn" target="_blank" rel="external nofollow"><i class="social fa fa-qq fa_fw" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="mailto:959229640@qq.com" title="959229640@qq.com" class="social flat-btn" target="_blank" rel="external nofollow"><i class="social fa fa-envelope fa_fw" aria-hidden="true"></i></a>
+          
+        
+      </div>
+    
+    <!-- <div style="width: 90%; height: 1px; background: #ccc; margin: 10px 18px"></div> -->
+    
+  </div>
+</section>
+
+      
+    
+  
+    
+      
+      
+        
+  <section class='toc-wrapper'>
+    
+<header class='pure'>
+  <div><i class="fa fa-list-ul fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章目录</div>
+  
+    <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fa fa-thumbtack fa-fw"></i></a></div>
+  
+</header>
+
+    <div class='content pure'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#字符效果和横线等"><span class="toc-text"> 字符效果和横线等</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#引用-blockquotes"><span class="toc-text"> 引用 Blockquotes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#锚点与链接-links"><span class="toc-text"> 锚点与链接 Links</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多语言代码高亮-codes"><span class="toc-text"> 多语言代码高亮 Codes</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#行内代码-inline-code"><span class="toc-text"> 行内代码 Inline code</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#缩进风格"><span class="toc-text"> 缩进风格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js代码"><span class="toc-text"> JS代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图片-images"><span class="toc-text"> 图片 Images</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#列表-lists"><span class="toc-text"> 列表 Lists</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#无序列表加号和嵌套unordered-lists-"><span class="toc-text"> 无序列表（加号和嵌套）Unordered Lists (+&#x2F;-&#x2F;*)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有序列表-ordered-lists-12"><span class="toc-text"> 有序列表 Ordered Lists (1.&#x2F;2.)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gfm-task-list"><span class="toc-text"> GFM task list</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#绘制表格-tables"><span class="toc-text"> 绘制表格 Tables</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#特殊符号-html-entities-codes"><span class="toc-text"> 特殊符号 HTML Entities Codes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#emoji表情"><span class="toc-text"> Emoji表情 😃</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#科学公式-texkatex"><span class="toc-text"> 科学公式 TeX(KaTeX)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#拓展功能自定义div"><span class="toc-text"> 拓展功能–自定义div</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#detail折叠"><span class="toc-text"> detail折叠</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hint块"><span class="toc-text"> hint块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pannel块"><span class="toc-text"> pannel块</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#绘制流程图"><span class="toc-text"> 绘制流程图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#flowchart"><span class="toc-text"> Flowchart</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sequence-diagram"><span class="toc-text"> Sequence Diagram</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mermaid"><span class="toc-text"> mermaid</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#sequence-diagram-2"><span class="toc-text"> sequence diagram</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#flowchart-2"><span class="toc-text"> flowchart</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#state-diagram"><span class="toc-text"> state diagram</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pie-chart"><span class="toc-text"> pie chart</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#gantt"><span class="toc-text"> gantt</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#电路时序图"><span class="toc-text"> 电路时序图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#思维导图"><span class="toc-text"> 思维导图</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+
+      
+    
+  
+    
+      
+      
+        
+  <section class='tagcloud'>
+    
+<header class='pure'>
+  <div><i class="fa fa-hashtag fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
+  
+    <a class="rightBtn" 
+    rel="external nofollow noopener noreferrer"
+    href="/tags/"
+    title="tags/">
+    <i class="fa fa-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      <a href="/tags/AMBA/" style="font-size: 14px; color: #999">AMBA</a> <a href="/tags/ASIC/" style="font-size: 24px; color: #555">ASIC</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/Low-Power/" style="font-size: 14px; color: #999">Low Power</a> <a href="/tags/Python/" style="font-size: 14px; color: #999">Python</a> <a href="/tags/SOC/" style="font-size: 17.33px; color: #828282">SOC</a> <a href="/tags/UPF/" style="font-size: 14px; color: #999">UPF</a> <a href="/tags/eda-tools/" style="font-size: 17.33px; color: #828282">eda_tools</a> <a href="/tags/fifo/" style="font-size: 14px; color: #999">fifo</a> <a href="/tags/git/" style="font-size: 14px; color: #999">git</a> <a href="/tags/markdown/" style="font-size: 14px; color: #999">markdown</a> <a href="/tags/systemverilog/" style="font-size: 20.67px; color: #6c6c6c">systemverilog</a> <a href="/tags/testbench/" style="font-size: 14px; color: #999">testbench</a> <a href="/tags/vim/" style="font-size: 14px; color: #999">vim</a> <a href="/tags/vimrc/" style="font-size: 14px; color: #999">vimrc</a> <a href="/tags/%E4%B9%A6%E7%B1%8D/" style="font-size: 14px; color: #999">书籍</a> <a href="/tags/%E5%84%BF%E7%AB%A5%E6%95%99%E8%82%B2/" style="font-size: 14px; color: #999">儿童教育</a> <a href="/tags/%E6%AD%A3%E5%88%99/" style="font-size: 14px; color: #999">正则</a> <a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 14px; color: #999">面试</a>
+    </div>
+  </section>
+
+
+      
+    
+  
+    
+      
+      
+        
+  <section class='category'>
+    
+<header class='pure'>
+  <div><i class="fa fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;所有分类</div>
+  
+    <a class="rightBtn" 
+    rel="external nofollow noopener noreferrer"
+    href="/categories/"
+    title="categories/">
+    <i class="fa fa-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      <ul class="entry">
+        
+          <li><a class="flat-box" title="/categories/ASIC%E8%AE%BE%E8%AE%A1/" href="/categories/ASIC%E8%AE%BE%E8%AE%A1/"><div class='name'>ASIC设计</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/ASIC%E9%AA%8C%E8%AF%81/" href="/categories/ASIC%E9%AA%8C%E8%AF%81/"><div class='name'>ASIC验证</div><div class='badge'>(5)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/Linux/" href="/categories/Linux/"><div class='name'>Linux</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/Python/" href="/categories/Python/"><div class='name'>Python</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/SOC%E8%AE%BE%E8%AE%A1/" href="/categories/SOC%E8%AE%BE%E8%AE%A1/"><div class='name'>SOC设计</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/UPF/" href="/categories/UPF/"><div class='name'>UPF</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/eda-tools/" href="/categories/eda-tools/"><div class='name'>eda_tools</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/git/" href="/categories/git/"><div class='name'>git</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/markdown/" href="/categories/markdown/"><div class='name'>markdown</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/vim/" href="/categories/vim/"><div class='name'>vim</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/%E6%95%99%E8%82%B2/" href="/categories/%E6%95%99%E8%82%B2/"><div class='name'>教育</div><div class='badge'>(1)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+      
+    
+  
+
+
+        </aside>
+        <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fa fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+    </div>
+    <footer id="footer" class="clearfix">
+  
+  <!--
+  
+    <div class="social-wrapper">
+      
+        
+          <a href="http://www.uestc.edu.cn/" class="social fa fa-university fa_fw flat-btn" target="_blank" rel="external"></a>
+        
+      
+        
+          <a href="http://gr.uestc.edu.cn/" class="social fa fa-graduation-cap fa_fw flat-btn" target="_blank" rel="external"></a>
+        
+      
+        
+          <a href="#" class="social fa fa-map-marker fa_fw flat-btn" target="_blank" rel="external"></a>
+        
+      
+        
+          <a href="#" class="social fa fa-qq fa_fw flat-btn" target="_blank" rel="external"></a>
+        
+      
+        
+          <a href="mailto:959229640@qq.com" class="social fa fa-envelope fa_fw flat-btn" target="_blank" rel="external"></a>
+        
+      
+    </div>
+  
+  -->
+  <br>
+  <div><p>© 2019  <i class="fa fa-paper-plane"></i> 星雨夜澈</p>
+</div>
+  <!--
+  <div>本站使用 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a> 作为主题。
+  </div>
+  -->
+</footer>
+
+    <script>setLoadingBarProgress(80);</script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    //if(!ROOT.endsWith('/'))ROOT += '/';
+    if(ROOT.substring(ROOT.length-1)!='/')ROOT += '/';
+  </script>
+
+
+  
+  
+  
+  
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dxsm/cdn/lib/fancybox/jquery.fancybox.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/dxsm/cdn/lib/fancybox/jquery.fancybox.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $("body").find(".post-wrapper,#post").find("img").each(function () {
+          var element = document.createElement("a");
+          $(element).attr("data-fancybox", "gallery");
+          $(element).attr("href", $(this).attr("src"));
+          /* 图片采用懒加载处理时,
+           * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+           * 那么此处将原本的属性名src替换为对应属性名data-original,
+           * 修改如下
+           */
+           if ($(this).attr("data-echo")) {
+             $(element).attr("href", $(this).attr("data-echo"));
+           }
+          $(this).wrap(element);
+        });
+      });
+    </script>
+  
+
+  
+  
+  
+  
+    <!-- <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/dxsm/cdn/lib/valine/js/av-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dxsm/cdn/lib/valine/js/volantis.min.js"></script>
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        var notify = 'false' == true;
+        var verify = 'false' == true;
+        var valine = new Valine();
+        valine.init({
+          el: '#valine_container',
+          notify: notify,
+          verify: verify,
+          guest_info: guest_info,
+          
+          appId: "oXpUsKEu0r8ftXWi3WyLKouv-gzGzoHsz",
+          appKey: "38YI7fjW2gXoYfosRQp1oVoX",
+          placeholder: "快来评论吧~",
+          pageSize:'10',
+          avatar:'mp',
+          lang:'zh-cn',
+          highlight:''
+        })
+    </script>
+  
+
+  <!--
+  
+    
+    
+<script src="https://cdn.jsdelivr.net/gh/dxsm/cdn@latest/js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dxsm/cdn@latest/js/search.js"></script>
+
+    
+  
+  -->
+
+  
+    
+<script src="https://cdn.jsdelivr.net/gh/dxsm/cdn@latest/js/main.js"></script>
+
+  
+    
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/gh/toddmotto/echo@1.7.3/src/echo.js"></script>
+
+  <script>
+    echo.init({
+      offset: 100,
+      throttle: 250,
+      unload: false,
+      callback: function (element, op) {
+        //console.log(element, 'has been', op + 'ed')
+      }
+    });
+  </script>
+
+
+
+
+
+
+    <script>setLoadingBarProgress(100);</script>
+
+        <script src="//cdn.jsdelivr.net/npm/js-base64/base64.min.js"></script>
+        <script>
+        $('a').each(function() {
+          const $this = $(this);
+          const href = $this.attr('href');
+          if (href && href.match('^((http|https|thunder|qqdl|ed2k|Flashget|qbrowser|ftp|rtsp|mms)://)')) {
+            const strs = href.split('/');
+            if (strs.length >= 3) {
+                const host = strs[2];
+                if (host !== 'dxsm.github.io' || window.location.host) {
+                    $this.attr('href', '/go.html?u='+Base64.encode(href)+'').attr('rel', 'external nofollow noopener noreferrer');
+                    if (true) {
+                        $this.attr('target', '_blank');
+                    }
+                }
+            }
+          }
+        });
+        </script></body>
+</html>

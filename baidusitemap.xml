@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dxsm.github.io/p/markdown-ref.html</loc>
+    <loc>https://dxsm.github.io/p/markdown-ref-nc.html</loc>
     <lastmod>2020-04-10</lastmod>
   </url>  <url>
     <loc>https://dxsm.github.io/p/fifo-design.html</loc>
@@ -40,10 +40,10 @@
     <loc>https://dxsm.github.io/p/education-book.html</loc>
     <lastmod>2020-03-07</lastmod>
   </url>  <url>
-    <loc>https://dxsm.github.io/p/compile-env.html</loc>
+    <loc>https://dxsm.github.io/p/eda-irun.html</loc>
     <lastmod>2020-03-07</lastmod>
   </url>  <url>
-    <loc>https://dxsm.github.io/p/eda-irun.html</loc>
+    <loc>https://dxsm.github.io/p/compile-env.html</loc>
     <lastmod>2020-03-07</lastmod>
   </url>  <url>
     <loc>https://dxsm.github.io/p/asic-design-example.html</loc>
