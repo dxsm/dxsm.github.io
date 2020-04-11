@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://dxsm.github.io/p/ahb-protocal.html</loc>
+        <lastmod>2020-04-11T16:02:22.165Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dxsm.github.io/p/markdown-ref-nc.html</loc>
-        <lastmod>2020-04-10T20:45:43.413Z</lastmod>
+        <lastmod>2020-04-11T15:46:05.564Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -130,14 +138,6 @@
     <url>
         <loc>https://dxsm.github.io/p/asic-design-example.html</loc>
         <lastmod>2020-03-07T09:08:15.863Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/ahb-protocal.html</loc>
-        <lastmod>2020-03-07T09:08:15.861Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

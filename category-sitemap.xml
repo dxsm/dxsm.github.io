@@ -8,8 +8,15 @@
     </url>
 
     <url>
+        <loc>https://dxsm.github.io/categories/SOC%25E8%25AE%25BE%25E8%25AE%25A1/</loc>
+        <lastmod>2020-04-11T16:02:22.165Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dxsm.github.io/categories/markdown/</loc>
-        <lastmod>2020-04-10T20:45:43.413Z</lastmod>
+        <lastmod>2020-04-11T15:46:05.564Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -73,13 +80,6 @@
     <url>
         <loc>https://dxsm.github.io/categories/eda-tools/</loc>
         <lastmod>2020-03-07T09:08:15.966Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/categories/SOC%25E8%25AE%25BE%25E8%25AE%25A1/</loc>
-        <lastmod>2020-03-07T09:08:15.861Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

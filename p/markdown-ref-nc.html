@@ -32,7 +32,8 @@ Content  [1]">
 
   <!-- link -->
   
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dxsm/cdn/lib/font-awesome/css/font-awesome.min.css">
   
 
   
@@ -610,6 +611,15 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
 <h2 id="绘制流程图"><a class="markdownIt-Anchor" href="#绘制流程图"></a> 绘制流程图</h2>
 <h3 id="flowchart"><a class="markdownIt-Anchor" href="#flowchart"></a> Flowchart</h3>
 <p>流程图语法参考 <a href="https://github.com/adrai/flowchart.js" target="_blank" rel="noopener">https://github.com/adrai/flowchart.js</a></p>
+<p>Markdown常用的元素有以下几种：</p>
+<ul data-mark="-">
+<li>start</li>
+<li>end</li>
+<li>operation</li>
+<li>condition</li>
+<li>inputoutput</li>
+<li>subroutine</li>
+</ul>
 <div class="flow">st=&gt;start: Start:&gt;https://dxsm.github.io[blank]
 e=&gt;end:&gt;https://dxsm.github.io
 op1=&gt;operation: My Operation
@@ -624,6 +634,33 @@ cond(yes)-&gt;io-&gt;e
 cond(no)-&gt;para
 para(path1, bottom)-&gt;sub1(right)-&gt;op1
 para(path2, top)-&gt;op1
+</div>
+<p>状态标记<br />
+Markdown会使用不同的颜色来标记状态，状态主要有以下几种：</p>
+<ul data-mark="-">
+<li>past</li>
+<li>current</li>
+<li>future</li>
+<li>approved</li>
+<li>rejected</li>
+<li>invalid</li>
+</ul>
+<div class="flow">start=&gt;start: 开始|past
+requirementAnalysis=&gt;operation: 需求分析|past
+design=&gt;operation: 软件设计|past
+coding=&gt;operation: 编码|past
+selfTestingPased=&gt;condition: 自测通过？|approved
+debug=&gt;operation: debug|invalid
+submitTestingPased=&gt;condition: 提测通过？|rejected
+modifyBug=&gt;operation: 修bug|current
+deploy=&gt;operation: 部署|future
+end=&gt;end: 结束|future
+
+start-&gt;requirementAnalysis-&gt;design-&gt;coding-&gt;selfTestingPased
+selfTestingPased(no)-&gt;debug(right)-&gt;selfTestingPased
+selfTestingPased(yes)-&gt;submitTestingPased
+submitTestingPased(yes)-&gt;deploy-&gt;end
+submitTestingPased(no)-&gt;modifyBug(right)-&gt;submitTestingPased
 </div>
 <h3 id="sequence-diagram"><a class="markdownIt-Anchor" href="#sequence-diagram"></a> Sequence Diagram</h3>
 <p>语法参考 <a href="https://bramp.github.io/js-sequence-diagrams/" target="_blank" rel="noopener">https://bramp.github.io/js-sequence-diagrams/</a></p>
@@ -723,7 +760,7 @@ Future task2              :         des4, after des3, 5d
             <hr>
             <div class='new-meta-box'>
               
-                <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-11T04:45:43+08:00">
+                <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-11T23:46:05+08:00">
                   <a class='notlink'>
                     <i class="fa fa-pencil-alt" aria-hidden="true"></i>
                     2020-04-11
@@ -798,7 +835,15 @@ Future task2              :         des4, after des3, 5d
         var diagram = flowchart.parse(flow.textContent);
         flow.id = 'flow_' + i;
         flow.innerHTML = '';
-        diagram.drawSVG(flow.id);
+        diagram.drawSVG(flow.id, {
+            'flowstate' : {'past' : { 'fill' : '#CCCCCC', 'font-size' : 12},
+                           'current' : {'fill' : 'yellow', 'font-color' : 'red', 'font-weight' : 'bold'},
+                           //'future' : { 'fill' : '#FFFF99'},
+                           'request' : { 'fill' : 'blue'},
+                           'invalid': {'fill' : '#444444'},
+                           'approved' : { 'fill' : '#58C4A3', 'font-size' : 12, 'yes-text' : 'APPROVED', 'no-text' : 'n/a' },
+                           'rejected' : { 'fill' : '#C45879', 'font-size' : 12, 'yes-text' : 'n/a', 'no-text' : 'REJECTED' }}
+        });
       } catch (error) {
         flow.innerHTML = '<pre class="language-text">' + error.toString() + '</pre>';
       }
