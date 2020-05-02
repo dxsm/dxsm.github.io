@@ -8,6 +8,13 @@
     </url>
     
     <url>
+        <loc>https://dxsm.github.io/shuoshuo/</loc>
+        <lastmod>2020-04-14T15:33:45.052Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://dxsm.github.io/about/</loc>
         <lastmod>2020-04-09T16:13:13.953Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -57,13 +64,6 @@
     </url>
     
     <url>
-        <loc>https://dxsm.github.io/galleries/%25E8%2583%258C%25E6%2599%25AF%25E5%259B%25BE%25E7%2589%25874/</loc>
-        <lastmod>2020-02-22T07:34:31.010Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
         <loc>https://dxsm.github.io/galleries/%25E8%2583%258C%25E6%2599%25AF%25E5%259B%25BE%25E7%2589%25873/</loc>
         <lastmod>2020-02-22T07:34:31.010Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -71,14 +71,21 @@
     </url>
     
     <url>
-        <loc>https://dxsm.github.io/galleries/</loc>
-        <lastmod>2020-02-22T07:34:31.009Z</lastmod>
+        <loc>https://dxsm.github.io/galleries/%25E8%2583%258C%25E6%2599%25AF%25E5%259B%25BE%25E7%2589%25874/</loc>
+        <lastmod>2020-02-22T07:34:31.010Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://dxsm.github.io/archives/</loc>
+        <lastmod>2020-02-22T07:34:31.009Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://dxsm.github.io/galleries/</loc>
         <lastmod>2020-02-22T07:34:31.009Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
