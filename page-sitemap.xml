@@ -8,6 +8,27 @@
     </url>
     
     <url>
+        <loc>https://dxsm.github.io/list/books.html</loc>
+        <lastmod>2020-05-04T16:04:17.473Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://dxsm.github.io/list/</loc>
+        <lastmod>2020-05-04T15:39:27.211Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://dxsm.github.io/list/tools.html</loc>
+        <lastmod>2020-05-04T15:31:24.010Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://dxsm.github.io/shuoshuo/</loc>
         <lastmod>2020-04-14T15:33:45.052Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -22,14 +43,7 @@
     </url>
     
     <url>
-        <loc>https://dxsm.github.io/tools/</loc>
-        <lastmod>2020-04-09T16:05:08.272Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://dxsm.github.io/games/</loc>
+        <loc>https://dxsm.github.io/list/games.html</loc>
         <lastmod>2020-04-09T15:25:14.803Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -64,13 +78,6 @@
     </url>
     
     <url>
-        <loc>https://dxsm.github.io/galleries/%25E8%2583%258C%25E6%2599%25AF%25E5%259B%25BE%25E7%2589%25873/</loc>
-        <lastmod>2020-02-22T07:34:31.010Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
         <loc>https://dxsm.github.io/galleries/%25E8%2583%258C%25E6%2599%25AF%25E5%259B%25BE%25E7%2589%25874/</loc>
         <lastmod>2020-02-22T07:34:31.010Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -78,14 +85,21 @@
     </url>
     
     <url>
-        <loc>https://dxsm.github.io/archives/</loc>
-        <lastmod>2020-02-22T07:34:31.009Z</lastmod>
+        <loc>https://dxsm.github.io/galleries/%25E8%2583%258C%25E6%2599%25AF%25E5%259B%25BE%25E7%2589%25873/</loc>
+        <lastmod>2020-02-22T07:34:31.010Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://dxsm.github.io/galleries/</loc>
+        <lastmod>2020-02-22T07:34:31.009Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://dxsm.github.io/archives/</loc>
         <lastmod>2020-02-22T07:34:31.009Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
