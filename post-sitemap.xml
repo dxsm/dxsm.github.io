@@ -8,112 +8,72 @@
     </url>
 
     <url>
+        <loc>https://dxsm.github.io/p/low-power-rtl-you-hua-zhi-ti-gao-cge.html</loc>
+        <lastmod>2020-07-05T16:45:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/low-power-rtl-you-hua.html</loc>
+        <lastmod>2020-07-05T16:08:19.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/electron-learning-chp1.html</loc>
+        <lastmod>2020-07-05T15:42:28.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/jtag.html</loc>
+        <lastmod>2020-07-05T15:16:02.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/axi-protocal.html</loc>
+        <lastmod>2020-07-05T15:13:41.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dxsm.github.io/p/ahb-protocal.html</loc>
-        <lastmod>2020-04-11T16:02:22.165Z</lastmod>
+        <lastmod>2020-07-05T15:13:32.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://dxsm.github.io/p/markdown-ref-nc.html</loc>
-        <lastmod>2020-04-11T15:46:05.564Z</lastmod>
+        <loc>https://dxsm.github.io/p/xin-pian-she-ji-xiao-shi-li-shu-ju-shou-shen.html</loc>
+        <lastmod>2020-07-05T15:10:42.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://dxsm.github.io/p/fifo-design.html</loc>
-        <lastmod>2020-03-08T07:27:52.263Z</lastmod>
+        <loc>https://dxsm.github.io/p/xin-pian-she-ji-xiao-shi-li-gong-xiang-buffer.html</loc>
+        <lastmod>2020-07-05T15:10:36.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://dxsm.github.io/p/vim-cfg.html</loc>
-        <lastmod>2020-03-07T09:08:15.980Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/upf-note.html</loc>
-        <lastmod>2020-03-07T09:08:15.979Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/sv-learning-chap4.html</loc>
-        <lastmod>2020-03-07T09:08:15.978Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/sv-learning-chap3.html</loc>
-        <lastmod>2020-03-07T09:08:15.977Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/sv-learning-chap2.html</loc>
-        <lastmod>2020-03-07T09:08:15.976Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/sv-learning-chap1.html</loc>
-        <lastmod>2020-03-07T09:08:15.975Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/python-regular-expression.html</loc>
-        <lastmod>2020-03-07T09:08:15.974Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/nc-force-usage.html</loc>
-        <lastmod>2020-03-07T09:08:15.973Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/linux-tips.html</loc>
-        <lastmod>2020-03-07T09:08:15.971Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/git-learning.html</loc>
-        <lastmod>2020-03-07T09:08:15.970Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/education-book.html</loc>
-        <lastmod>2020-03-07T09:08:15.967Z</lastmod>
+        <loc>https://dxsm.github.io/p/xin-pian-she-ji-xiao-jing-yan-liu-bao-xu-ce-lue.html</loc>
+        <lastmod>2020-07-05T15:10:31.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -121,15 +81,7 @@
 
     <url>
         <loc>https://dxsm.github.io/p/eda-irun.html</loc>
-        <lastmod>2020-03-07T09:08:15.966Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/compile-env.html</loc>
-        <lastmod>2020-03-07T09:08:15.966Z</lastmod>
+        <lastmod>2020-07-05T14:25:06.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -137,7 +89,119 @@
 
     <url>
         <loc>https://dxsm.github.io/p/asic-design-example.html</loc>
-        <lastmod>2020-03-07T09:08:15.863Z</lastmod>
+        <lastmod>2020-07-05T14:25:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/compile-env.html</loc>
+        <lastmod>2020-07-05T14:25:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/fifo-design.html</loc>
+        <lastmod>2020-07-05T14:25:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/git-learning.html</loc>
+        <lastmod>2020-07-05T14:25:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/linux-tips.html</loc>
+        <lastmod>2020-07-05T14:25:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/nc-force-usage.html</loc>
+        <lastmod>2020-07-05T14:25:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/sv-learning-chap3.html</loc>
+        <lastmod>2020-07-05T14:25:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/sv-learning-chap2.html</loc>
+        <lastmod>2020-07-05T14:25:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/sv-learning-chap4.html</loc>
+        <lastmod>2020-07-05T14:25:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/sv-learning-chap1.html</loc>
+        <lastmod>2020-07-05T14:25:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/education-book.html</loc>
+        <lastmod>2020-07-05T14:25:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/markdown-ref-nc.html</loc>
+        <lastmod>2020-07-05T14:25:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/python-regular-expression.html</loc>
+        <lastmod>2020-07-05T14:25:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/vim-cfg.html</loc>
+        <lastmod>2020-07-05T14:25:06.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/upf-note.html</loc>
+        <lastmod>2020-07-05T14:25:06.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

@@ -1,0 +1,2 @@
+Sitemap: https://dxsm.github.io/sitemap.xml
+Sitemap: https://dxsm.github.io/baidusitemap.xml
