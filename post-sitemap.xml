@@ -9,6 +9,22 @@
 
 
     <url>
+        <loc>https://dxsm.github.io/p/tag-plugins.html</loc>
+        <lastmod>2021-06-20T13:56:33.922Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/markdown-ref-nc.html</loc>
+        <lastmod>2021-06-17T16:14:32.030Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dxsm.github.io/p/xin-pian-she-ji-xiao-shi-li-shu-ju-shou-shen.html</loc>
         <lastmod>2021-06-10T14:48:33.336Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -91,14 +107,6 @@
     <url>
         <loc>https://dxsm.github.io/p/nc-force-usage.html</loc>
         <lastmod>2021-06-10T14:48:33.196Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/markdown-ref-nc.html</loc>
-        <lastmod>2021-06-10T14:48:33.188Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

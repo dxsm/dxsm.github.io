@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://dxsm.github.io/tags/markdown/</loc>
+        <lastmod>2021-06-20T13:56:33.922Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dxsm.github.io/tags/%E8%B5%84%E6%BA%90%E4%BC%98%E5%8C%96/</loc>
         <lastmod>2021-06-10T14:48:33.336Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -89,13 +96,6 @@
     <url>
         <loc>https://dxsm.github.io/tags/testbench/</loc>
         <lastmod>2021-06-10T14:48:33.196Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/tags/markdown/</loc>
-        <lastmod>2021-06-10T14:48:33.188Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

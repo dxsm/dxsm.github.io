@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://dxsm.github.io/p/tag-plugins.html</loc>
+    <lastmod>2021-06-20</lastmod>
+  </url>
+  <url>
+    <loc>https://dxsm.github.io/p/markdown-ref-nc.html</loc>
+    <lastmod>2021-06-17</lastmod>
+  </url>
+  <url>
     <loc>https://dxsm.github.io/p/xin-pian-she-ji-xiao-shi-li-shu-ju-shou-shen.html</loc>
     <lastmod>2021-06-10</lastmod>
   </url>
@@ -42,10 +50,6 @@
   </url>
   <url>
     <loc>https://dxsm.github.io/p/nc-force-usage.html</loc>
-    <lastmod>2021-06-10</lastmod>
-  </url>
-  <url>
-    <loc>https://dxsm.github.io/p/markdown-ref-nc.html</loc>
     <lastmod>2021-06-10</lastmod>
   </url>
   <url>
