@@ -10,6 +10,24 @@
     
     
     <url>
+        <loc>https://dxsm.github.io/contact/</loc>
+        <lastmod>2021-12-04T17:54:27.440Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>https://dxsm.github.io/about/</loc>
+        <lastmod>2021-12-04T17:53:28.410Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
         <loc>https://dxsm.github.io/list/tools.html</loc>
         <lastmod>2021-12-01T16:56:58.660Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -28,15 +46,6 @@
     
     
     <url>
-        <loc>https://dxsm.github.io/about/</loc>
-        <lastmod>2021-06-10T14:38:28.652Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
         <loc>https://dxsm.github.io/archives/</loc>
         <lastmod>2021-06-10T14:38:28.652Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -47,15 +56,6 @@
     
     <url>
         <loc>https://dxsm.github.io/categories/</loc>
-        <lastmod>2021-06-10T14:38:28.652Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>https://dxsm.github.io/contact/</loc>
         <lastmod>2021-06-10T14:38:28.652Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
