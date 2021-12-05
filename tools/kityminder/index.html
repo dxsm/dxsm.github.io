@@ -23,9 +23,20 @@
 			height: 100%;
 			overflow: hidden;
 		}
+		h1.editor-title {
+			background: #393F4F;
+			color: white;
+			margin: 0;
+			height: 40px;
+			font-size: 14px;
+			line-height: 40px;
+			font-family: 'Hiragino Sans GB', 'Arial', 'Microsoft Yahei';
+			font-weight: normal;
+			padding: 0 20px;
+		}
 		div.minder-editor-container {
 			position: absolute;
-			top: 0px;
+			top: 40px;
 			bottom: 0;
 			left: 0;
 			right: 0;
@@ -33,7 +44,13 @@
 	</style>
 </head>
 <body ng-app="kityminderDemo" ng-controller="MainController">
+<h1 class="editor-title">
+	<a href="https://dxsm.github.io/" style="color: #fff;">
+        返回主页
+	</a>
+</h1>
 <kityminder-editor on-init="initEditor(editor, minder)"></kityminder-editor>
+<iframe name="frameFile" style="display:none;"></iframe>
 </body>
 
 <!-- bower:js -->
@@ -59,6 +76,7 @@
 <!-- endbower -->
 
 <script src="https://cdn.jsdelivr.net/gh/dxsm/cdn/kityminder/kityminder.editor.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dxsm/cdn@1.8.1/kityminder/diy.js"></script>
 
 
 <script>
