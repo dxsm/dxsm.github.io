@@ -9,6 +9,78 @@
 
 
     <url>
+        <loc>https://dxsm.github.io/p/spinalhdl-inst.html</loc>
+        <lastmod>2022-03-07T15:05:08.997Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/spinalhdl-array.html</loc>
+        <lastmod>2022-03-07T15:01:40.464Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/spinalhdl-blackbox.html</loc>
+        <lastmod>2022-03-07T15:01:17.228Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/spinalhdl-clockdomain.html</loc>
+        <lastmod>2022-03-07T14:49:37.781Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/spinalhdl-enum.html</loc>
+        <lastmod>2022-03-07T14:48:01.713Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/spinalhdl-algorithm.html</loc>
+        <lastmod>2022-03-07T14:37:47.149Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/spinalhdl-sequential.html</loc>
+        <lastmod>2022-03-07T14:22:45.197Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/spinalhdl-conditional.html</loc>
+        <lastmod>2022-03-07T14:10:27.205Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/spinalhdl-base-comb.html</loc>
+        <lastmod>2022-03-07T13:57:03.844Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://dxsm.github.io/p/tag-plugins.html</loc>
         <lastmod>2021-12-04T10:07:12.704Z</lastmod>
         <changefreq>weekly</changefreq>
