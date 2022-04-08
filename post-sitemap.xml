@@ -9,40 +9,32 @@
 
 
     <url>
-        <loc>https://dxsm.github.io/p/spinalhdl-inst.html</loc>
-        <lastmod>2022-03-07T15:05:08.997Z</lastmod>
+        <loc>https://dxsm.github.io/p/bao-gai-typora.html</loc>
+        <lastmod>2022-04-08T14:45:09.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://dxsm.github.io/p/spinalhdl-array.html</loc>
-        <lastmod>2022-03-07T15:01:40.464Z</lastmod>
+        <loc>https://dxsm.github.io/p/ju-yu-wang-yuan-cheng-lian-jie-vmware-de-linux.html</loc>
+        <lastmod>2022-04-08T14:26:43.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://dxsm.github.io/p/spinalhdl-blackbox.html</loc>
-        <lastmod>2022-03-07T15:01:17.228Z</lastmod>
+        <loc>https://dxsm.github.io/p/jie-jue-linux-device-or-resource-busy-wen-ti.html</loc>
+        <lastmod>2022-04-08T14:26:32.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://dxsm.github.io/p/spinalhdl-clockdomain.html</loc>
-        <lastmod>2022-03-07T14:49:37.781Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/spinalhdl-enum.html</loc>
-        <lastmod>2022-03-07T14:48:01.713Z</lastmod>
+        <loc>https://dxsm.github.io/p/e-wu-fa-huo-de-suo.html</loc>
+        <lastmod>2022-04-08T14:25:50.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -50,23 +42,31 @@
 
     <url>
         <loc>https://dxsm.github.io/p/spinalhdl-algorithm.html</loc>
-        <lastmod>2022-03-07T14:37:47.149Z</lastmod>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://dxsm.github.io/p/spinalhdl-sequential.html</loc>
-        <lastmod>2022-03-07T14:22:45.197Z</lastmod>
+        <loc>https://dxsm.github.io/p/spinalhdl-array.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://dxsm.github.io/p/spinalhdl-conditional.html</loc>
-        <lastmod>2022-03-07T14:10:27.205Z</lastmod>
+        <loc>https://dxsm.github.io/p/spinalhdl-blackbox.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/spinalhdl-clockdomain.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -74,207 +74,39 @@
 
     <url>
         <loc>https://dxsm.github.io/p/spinalhdl-base-comb.html</loc>
-        <lastmod>2022-03-07T13:57:03.844Z</lastmod>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://dxsm.github.io/p/tag-plugins.html</loc>
-        <lastmod>2021-12-04T10:07:12.704Z</lastmod>
+        <loc>https://dxsm.github.io/p/spinalhdl-enum.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://dxsm.github.io/p/markdown-ref-nc.html</loc>
-        <lastmod>2021-06-17T16:14:32.030Z</lastmod>
+        <loc>https://dxsm.github.io/p/spinalhdl-conditional.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://dxsm.github.io/p/xin-pian-she-ji-xiao-shi-li-shu-ju-shou-shen.html</loc>
-        <lastmod>2021-06-10T14:48:33.336Z</lastmod>
+        <loc>https://dxsm.github.io/p/spinalhdl-sequential.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://dxsm.github.io/p/xin-pian-she-ji-xiao-shi-li-gong-xiang-buffer.html</loc>
-        <lastmod>2021-06-10T14:48:33.332Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/xin-pian-she-ji-xiao-jing-yan-liu-bao-xu-ce-lue.html</loc>
-        <lastmod>2021-06-10T14:48:33.316Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/vim-cfg.html</loc>
-        <lastmod>2021-06-10T14:48:33.304Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/upf-note.html</loc>
-        <lastmod>2021-06-10T14:48:33.284Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/sv-learning-chap4.html</loc>
-        <lastmod>2021-06-10T14:48:33.268Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/sv-learning-chap3.html</loc>
-        <lastmod>2021-06-10T14:48:33.260Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/sv-learning-chap2.html</loc>
-        <lastmod>2021-06-10T14:48:33.252Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/sv-learning-chap1.html</loc>
-        <lastmod>2021-06-10T14:48:33.240Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/python-regular-expression.html</loc>
-        <lastmod>2021-06-10T14:48:33.220Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/nc-force-usage.html</loc>
-        <lastmod>2021-06-10T14:48:33.196Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/low-power-rtl-you-hua-zhi-ti-gao-cge.html</loc>
-        <lastmod>2021-06-10T14:48:33.156Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/low-power-rtl-you-hua.html</loc>
-        <lastmod>2021-06-10T14:48:33.132Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/linux-tips.html</loc>
-        <lastmod>2021-06-10T14:48:33.120Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/jtag.html</loc>
-        <lastmod>2021-06-10T14:48:33.112Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/git-learning.html</loc>
-        <lastmod>2021-06-10T14:48:33.092Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/fifo-design.html</loc>
-        <lastmod>2021-06-10T14:48:33.072Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/electron-learning-chp1.html</loc>
-        <lastmod>2021-06-10T14:48:33.020Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/education-book.html</loc>
-        <lastmod>2021-06-10T14:48:32.980Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/eda-irun.html</loc>
-        <lastmod>2021-06-10T14:48:32.964Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/compile-env.html</loc>
-        <lastmod>2021-06-10T14:48:32.936Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/axi-protocal.html</loc>
-        <lastmod>2021-06-10T14:48:32.920Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/p/asic-design-example.html</loc>
-        <lastmod>2021-06-10T14:48:32.908Z</lastmod>
+        <loc>https://dxsm.github.io/p/spinalhdl-inst.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -282,7 +114,207 @@
 
     <url>
         <loc>https://dxsm.github.io/p/ahb-protocal.html</loc>
-        <lastmod>2021-06-10T14:48:32.884Z</lastmod>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/axi-protocal.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/asic-design-example.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/education-book.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/compile-env.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/electron-learning-chp1.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/jtag.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/eda-irun.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/low-power-rtl-you-hua.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/fifo-design.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/linux-tips.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/nc-force-usage.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/python-regular-expression.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/git-learning.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/markdown-ref-nc.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/sv-learning-chap1.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/sv-learning-chap4.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/sv-learning-chap3.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/sv-learning-chap2.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/low-power-rtl-you-hua-zhi-ti-gao-cge.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/xin-pian-she-ji-xiao-shi-li-gong-xiang-buffer.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/vim-cfg.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/tag-plugins.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/upf-note.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/xin-pian-she-ji-xiao-jing-yan-liu-bao-xu-ce-lue.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/p/xin-pian-she-ji-xiao-shi-li-shu-ju-shou-shen.html</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
