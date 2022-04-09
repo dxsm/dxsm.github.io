@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://dxsm.github.io/p/shell-cfg.html</loc>
+    <lastmod>2022-04-09</lastmod>
+  </url>
+  <url>
+    <loc>https://dxsm.github.io/p/linux-tips.html</loc>
+    <lastmod>2022-04-09</lastmod>
+  </url>
+  <url>
+    <loc>https://dxsm.github.io/p/vim-cfg.html</loc>
+    <lastmod>2022-04-09</lastmod>
+  </url>
+  <url>
     <loc>https://dxsm.github.io/p/typora-picgo-github-da-jian-tu-chuang.html</loc>
     <lastmod>2022-04-08</lastmod>
   </url>
@@ -97,10 +109,6 @@
     <lastmod>2022-04-02</lastmod>
   </url>
   <url>
-    <loc>https://dxsm.github.io/p/linux-tips.html</loc>
-    <lastmod>2022-04-02</lastmod>
-  </url>
-  <url>
     <loc>https://dxsm.github.io/p/nc-force-usage.html</loc>
     <lastmod>2022-04-02</lastmod>
   </url>
@@ -138,10 +146,6 @@
   </url>
   <url>
     <loc>https://dxsm.github.io/p/xin-pian-she-ji-xiao-shi-li-gong-xiang-buffer.html</loc>
-    <lastmod>2022-04-02</lastmod>
-  </url>
-  <url>
-    <loc>https://dxsm.github.io/p/vim-cfg.html</loc>
     <lastmod>2022-04-02</lastmod>
   </url>
   <url>

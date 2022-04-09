@@ -9,6 +9,20 @@
 
 
     <url>
+        <loc>https://dxsm.github.io/categories/linux/</loc>
+        <lastmod>2022-04-09T13:40:25.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/categories/vim/</loc>
+        <lastmod>2022-04-09T12:28:58.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://dxsm.github.io/categories/typora/</loc>
         <lastmod>2022-04-08T17:49:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -16,21 +30,7 @@
     </url>
 
     <url>
-        <loc>https://dxsm.github.io/categories/linux/</loc>
-        <lastmod>2022-04-08T14:26:43.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://dxsm.github.io/categories/UPF/</loc>
-        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/categories/vim/</loc>
         <lastmod>2022-04-02T14:53:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -59,13 +59,6 @@
 
     <url>
         <loc>https://dxsm.github.io/categories/ASIC%25E9%25AA%258C%25E8%25AF%2581/</loc>
-        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/categories/Linux/</loc>
         <lastmod>2022-04-02T14:53:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
