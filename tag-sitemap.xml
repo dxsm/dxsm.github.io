@@ -178,20 +178,6 @@
     </url>
 
     <url>
-        <loc>https://dxsm.github.io/tags/electron-vue/</loc>
-        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://dxsm.github.io/tags/electron/</loc>
-        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://dxsm.github.io/tags/%E4%B9%A6%E7%B1%8D/</loc>
         <lastmod>2022-04-02T14:53:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -200,6 +186,20 @@
 
     <url>
         <loc>https://dxsm.github.io/tags/%E5%84%BF%E7%AB%A5%E6%95%99%E8%82%B2/</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/tags/electron-vue/</loc>
+        <lastmod>2022-04-02T14:53:23.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://dxsm.github.io/tags/electron/</loc>
         <lastmod>2022-04-02T14:53:23.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
