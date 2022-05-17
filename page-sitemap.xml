@@ -10,6 +10,15 @@
     
     
     <url>
+        <loc>https://dxsm.github.io/links/</loc>
+        <lastmod>2022-05-17T15:32:23.192Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
         <loc>https://dxsm.github.io/tags/</loc>
         <lastmod>2021-12-05T10:26:55.365Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -74,15 +83,6 @@
     
     <url>
         <loc>https://dxsm.github.io/galleries/</loc>
-        <lastmod>2021-06-10T14:38:28.652Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>https://dxsm.github.io/links/</loc>
         <lastmod>2021-06-10T14:38:28.652Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
